@@ -2,6 +2,7 @@
 \language "english"
 
 \include "reed-four-global.ily"
+\include "../global.ily"
 
 ReedFourNumberOne = \relative c' {
     \setup
@@ -9,9 +10,9 @@ ReedFourNumberOne = \relative c' {
     \numericTimeSignature \time 4/4
     
     fs1->\sfzf \changeBariSax ~ |
-    fs2 ~ fs8 r cs'4
+    fs2 ~ fs8 r cs'4\ten
     fs,1->\sfzf ~ |
-    fs2 ~ fs8 r cs'4
+    fs2 ~ fs8 r cs'4\ten
     fs,1-> ~ |
     fs4. r8 r2 | 
     r4 a g f |

@@ -8,7 +8,7 @@ ReedThreeNumberOne = \relative c''' {
     \clef treble \key c \major
     \numericTimeSignature \time 4/4
     
-    r4\changeSopSax \ff d d8 d4 d8 ~ |
+    r4 d\changeSopSax d8 d4 d8 ~ |
     d8 d4 d8 ~ d2 |
     d4 d d8 d4 d8 ~ |
     d8 d4 d8 ~ d2 |

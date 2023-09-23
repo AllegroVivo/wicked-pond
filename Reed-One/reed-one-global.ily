@@ -3,11 +3,36 @@
 %------------------%
 % Instrument Names %
 %------------------%
-changePiccolo = ^\markup { \box \bold "Piccolo" }
-changeFlute = ^\markup { \bold \box "Flute" }
-changeAltoFlute = ^\markup { \bold \box "Alto Flute" }
-changeRecorder = ^\markup { \bold \box "Recorder" }
-changePennyWhistle = ^\markup { \bold \box "Penny Whistle" }
+changePiccolo = ^\markup {
+    \general-align #X #-0.7
+    \bold 
+    \override #'(box-padding . 0.5) \box
+    "Piccolo" 
+}
+changeFlute = ^\markup {
+    \general-align #X #-0.7
+    \bold 
+    \override #'(box-padding . 0.5) \box 
+    "Flute" 
+}
+changeAltoFlute = ^\markup {
+    \general-align #X #-0.7
+    \bold 
+    \override #'(box-padding . 0.5) \box 
+    "Alto Flute" 
+}
+changeRecorder = ^\markup {
+    \general-align #X #-0.7
+    \bold 
+    \override #'(box-padding . 0.5) \box 
+    "Recorder" 
+}
+changePennyWhistle = ^\markup {
+    \general-align #X #-0.7
+    \bold 
+    \override #'(box-padding . 0.5) \box 
+    "Penny Whistle" 
+}
 
 %------------------%
 % Initial Settings %

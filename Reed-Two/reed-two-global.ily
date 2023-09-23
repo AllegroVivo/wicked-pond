@@ -3,9 +3,24 @@
 %------------------%
 % Instrument Names %
 %------------------%
-changeOboe = ^\markup { \box \bold "Oboe" }
-changeEngHn = ^\markup { \bold \box "English Horn" }
-changeBsOboe = ^\markup { \bold \box "Bass Oboe" }
+changeOboe = ^\markup { 
+    \general-align #X #-0.7
+    \bold 
+    \override #'(box-padding . 0.5) \box 
+    "Oboe" 
+}
+changeEngHn = ^\markup { 
+    \general-align #X #-0.7
+    \bold 
+    \override #'(box-padding . 0.5) \box 
+    "English Horn"
+}
+changeBsOboe = ^\markup {
+    \general-align #X #-0.7
+    \bold 
+    \override #'(box-padding . 0.5) \box 
+    "Bass Oboe" 
+}
 
 %------------------%
 % Initial Settings %

@@ -1,15 +1,40 @@
 \version "2.24.2"
 
-\include "../dynamics.ily"
+\include "../global.ily"
 
 %------------------%
 % Instrument Names %
 %------------------%
-changeFlute = ^\markup { \box \bold "Flute" }
-changeBbClar = ^\markup { \bold \box "Bb Clar" }
-changeBsClar = ^\markup { \bold \box "Bs Clar" }
-changeBsn = ^\markup { \bold \box "Bassoon" }
-changeBariSax = ^\markup { \bold \box "Bari Sax" }
+changeFlute = ^\markup { 
+    \general-align #X #-0.7
+    \bold 
+    \override #'(box-padding . 0.5) \box
+    "Flute"
+}
+changeBbClar = ^\markup {
+    \general-align #X #-0.7
+    \bold 
+    \override #'(box-padding . 0.5) \box
+    "Bb Clar" 
+}
+changeBsClar = ^\markup { 
+    \general-align #X #-0.7
+    \bold 
+    \override #'(box-padding . 0.5) \box 
+    "Bs Clar" 
+}
+changeBsn = ^\markup {
+    \general-align #X #-0.7
+    \bold 
+    \override #'(box-padding . 0.5) \box
+    "Bassoon"
+}
+changeBariSax = ^\markup { 
+    \general-align #X #-0.7
+    \bold
+    \override #'(box-padding . 0.5) \box
+    "Bari Sax" 
+}
 
 %------------------%
 % Initial Settings %

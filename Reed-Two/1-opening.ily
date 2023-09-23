@@ -8,7 +8,7 @@ ReedTwoNumberOne = \relative c''' {
     \clef treble \key c \major
     \numericTimeSignature \time 4/4
     
-    r4\changeOboe a \ff a8 a4 c8 ~ |
+    r4 a\changeOboe \ff a8 a4 c8 ~ |
     c8 b4 b8 ~ b2 |
     r4 a a8 a4 c8 ~ |
     c8 b4 b8 ~ b2 |

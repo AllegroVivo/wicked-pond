@@ -3,10 +3,30 @@
 %------------------%
 % Instrument Names %
 %------------------%
-changeBbClar = ^\markup { \bold \box "Bb Clarinet" }
-changeEbClar = ^\markup { \bold \box "Eb Clarinet" }
-changeBsClar = ^\markup { \bold \box "Bs. Clarinet" }
-changeSopSax = ^\markup { \bold \box "Sop. Sax" }
+changeBbClar = ^\markup { 
+    \general-align #X #-0.7
+    \bold 
+    \override #'(box-padding . 0.5) \box
+    "Bb Clarinet" 
+}
+changeEbClar = ^\markup { 
+    \general-align #X #-0.7
+    \bold 
+    \override #'(box-padding . 0.5) \box 
+    "Eb Clarinet" 
+}
+changeBsClar = ^\markup { 
+    \general-align #X #-0.7
+    \bold 
+    \override #'(box-padding . 0.5) \box 
+    "Bs. Clarinet"
+}
+changeSopSax = ^\markup { 
+    \general-align #X #-0.7
+    \bold 
+    \override #'(box-padding . 0.5)  \box 
+    "Sop. Sax"
+}
 
 %------------------%
 % Initial Settings %

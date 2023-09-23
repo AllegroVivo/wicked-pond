@@ -13,19 +13,30 @@
 \include "Reed-Three/reed-three-main.ly"
 \include "Reed-Four/reed-four-main.ly"
 \include "Horn-One/horn-one-main.ly"
+\include "Horn-Two/horn-two-main.ly"
 
-\bookpart {
-    \score {
-        <<
-            \new StaffGroup <<
-                \ReedOneNumberOnePart
-                \ReedTwoNumberOnePart
-                \ReedThreeNumberOnePart
-                \ReedFourNumberOnePart
+\book {
+    \bookpart {
+        \header {
+            title = "1. Opening"
+            composer = "Stephen Schwartz"
+            footer = "Orchestrations by William David Brohn"
+        }
+        \score {
+            <<
+                \new StaffGroup <<
+                    \ReedOneNumberOnePart
+                    \ReedTwoNumberOnePart
+                    \ReedThreeNumberOnePart
+                    \ReedFourNumberOnePart
+                >>
+                \new StaffGroup <<
+                    \HornOneNumberOnePart
+                    \HornTwoNumberOnePart
+                >>
             >>
-            \new StaffGroup <<
-                \HornOneNumberOnePart
-            >>
-        >>
+            \layout {
+            }
+        } 
     }
 }
