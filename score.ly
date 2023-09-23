@@ -14,6 +14,7 @@
 \include "Reed-Four/reed-four-main.ly"
 \include "Horn-One/horn-one-main.ly"
 \include "Horn-Two/horn-two-main.ly"
+\include "Trumpet-One/trumpet-one-main.ly"
 
 \book {
     \bookpart {
@@ -33,6 +34,7 @@
                 \new StaffGroup <<
                     \HornOneNumberOnePart
                     \HornTwoNumberOnePart
+                    \TrumpetOneNumberOnePart
                 >>
             >>
             \layout {
