@@ -1,20 +1,6 @@
 \version "2.24.2"
 
-%------------------%
-% Instrument Names %
-%------------------%
-changeTpt = ^\markup {
-    \general-align #X #-0.7
-    \bold 
-    \override #'(box-padding . 0.5) \box
-    "Trumpet" 
-}
-changeFlugel = ^\markup {
-    \general-align #X #-0.7
-    \bold 
-    \override #'(box-padding . 0.5) \box
-    "Flugelhorn"
-}
+\include "../global.ily"
 
 %------------------%
 % Initial Settings %

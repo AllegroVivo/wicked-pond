@@ -1,19 +1,15 @@
 \version "2.24.2"
 
+\include "../global.ily"
+
 %------------------%
 % Instrument Names %
 %------------------%
-changeTpt = ^\markup {
+changeFlute = ^\markup { 
     \general-align #X #-0.7
     \bold 
     \override #'(box-padding . 0.5) \box
-    "Trumpet" 
-}
-changeFlugel = ^\markup {
-    \general-align #X #-0.7
-    \bold 
-    \override #'(box-padding . 0.5) \box
-    "Flugelhorn"
+    "Flute"
 }
 
 %------------------%
@@ -24,5 +20,4 @@ setup = {
     \override Score.BarNumber.break-visibility = ##(#f #t #t)
     \override Score.BarNumber.self-alignment-X = #CENTER
     \set Score.alternativeNumberingStyle = #'numbers-with-letters
-    \override Glissando.style = #'trill
 }

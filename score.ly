@@ -15,6 +15,9 @@
 \include "Horn-One/horn-one-main.ly"
 \include "Horn-Two/horn-two-main.ly"
 \include "Trumpet-One/trumpet-one-main.ly"
+\include "Trumpet-Two/trumpet-two-main.ly"
+\include "Trombone-One/trombone-one-main.ly"
+\include "Trombone-Two/trombone-two-main.ly"
 
 \book {
     \bookpart {
@@ -31,10 +34,25 @@
                     \ReedThreeNumberOnePart
                     \ReedFourNumberOnePart
                 >>
+                \new ChoirStaff <<
+                    \new GrandStaff <<
+                        \set GrandStaff.systemStartDelimiter = #'SystemStartSquare
+                        \HornOneNumberOnePart
+                        \HornTwoNumberOnePart
+                    >>
+                    \new GrandStaff <<
+                        \set GrandStaff.systemStartDelimiter = #'SystemStartSquare
+                        \TrumpetOneNumberOnePart
+                        \TrumpetTwoNumberOnePart
+                    >>
+                    \new GrandStaff <<
+                        \set GrandStaff.systemStartDelimiter = #'SystemStartSquare
+                        \TromboneOneNumberOnePart
+                        \TromboneTwoNumberOnePart
+                    >>
+                >>
                 \new StaffGroup <<
-                    \HornOneNumberOnePart
-                    \HornTwoNumberOnePart
-                    \TrumpetOneNumberOnePart
+                    
                 >>
             >>
             \layout {

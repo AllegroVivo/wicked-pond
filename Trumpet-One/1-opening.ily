@@ -69,7 +69,7 @@ TrumpetOneNumberOne = \relative c'' {
     R1 \! |
     r1 |
     R1 * 6 |
-    R1 * 6 |
+    R1 * 5 |
     \bar "||" \key b \major \numericTimeSignature \time 4/4
     R1 * 4 |
     R1 * 4 |
@@ -84,7 +84,7 @@ TrumpetOneNumberOne = \relative c'' {
     \bar "||" 
     R1 * 4 |
     R1 * 2 |
-    r4 gs^\markup { \italic "Str. Mute" } \p gs8 gs4 gs8 ~ |
+    r4 gs,\strMute \p gs8 gs4 gs8 ~ |
     gs8 fss4 fss8 ~ fss2 |
     R1 * 2 |
     R1 \fermata |
