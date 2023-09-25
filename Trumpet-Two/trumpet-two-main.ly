@@ -4,7 +4,8 @@
 
 TrumpetTwoNumberOnePart = {
     <<
-        \new Staff = "trumpet-two-number-one" {
+        \new Staff \with { instrumentName = "Trumpet II" } 
+        {
             \TrumpetTwoNumberOne
         }
     >>

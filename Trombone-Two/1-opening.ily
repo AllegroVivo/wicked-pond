@@ -8,7 +8,7 @@ TromboneTwoNumberOne = \relative c {
     \clef bass \key c \major
     \numericTimeSignature \time 4/4
     
-    a1-> \sfzf |
+    a1-> ~ \sfzf |
     a2 ~ a8 r e4\ten
     a1-> \sfzf |
     a2 ~ a8 r e'4\ten

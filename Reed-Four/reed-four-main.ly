@@ -4,7 +4,8 @@
 
 ReedFourNumberOnePart = {
     <<
-        \new Staff = "reed-four-number-one" {
+        \new Staff \with { instrumentName = "Reed IV" } 
+        {
             \ReedFourNumberOne
         }
     >>

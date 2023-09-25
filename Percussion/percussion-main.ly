@@ -4,7 +4,7 @@
 
 PercussionNumberOnePart = {
     <<
-        \new Staff = "percussion-number-one" {
+        \new Staff \with { instrumentName = "Percussion" } 
             \PercussionNumberOne
         }
     >>
