@@ -1,0 +1,13 @@
+\version "2.24.2"
+
+drumPitchNames.piatti 	= #'piatti
+drumPitchNames.ratchet 	= #'ratchet
+
+#(define wicked-drums-style '(
+         (splashcymbal  harmonic	#f	 7)
+         (crashcymbal	harmonic	#f	 6)
+         (piatti	harmonic	#f	 0)
+         (ratchet	harmonic	#f	 0)
+         (bassdrum 	default 	#f	-3)))
+         
+          

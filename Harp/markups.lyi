@@ -1,0 +1,34 @@
+\version "2.24.2"
+
+%------------------%
+% Instrument Names %
+%------------------%
+Piano = ^\markup { 
+    \general-align #X #0.5
+    \bold 
+    \override #'(box-padding . 0.5) \box
+    "Piano"
+}
+PianoXylo = ^\markup { 
+    \general-align #X #-0.3
+    \bold 
+    \override #'(box-padding . 0.5) \box
+    "Piano/Xylo."
+}
+Cluster = ^\markup { 
+    \general-align #X #0
+    \bold 
+    \override #'(box-padding . 0.5) \box
+    "Cluster"
+}
+TremStgs = ^\markup { 
+    \general-align #X #-0.75
+    \bold 
+    \override #'(box-padding . 0.5) \box
+    "Tremolo Strings"
+}
+
+
+%---------%
+% Markups %
+%---------%
