@@ -2,12 +2,18 @@
 \language "english"
 
 \include "1-opening.ily"
+\include "2-no-one-mourns.ily"
 
 ReedTwoNumberOnePart = {
     <<
         \new Staff \with { instrumentName = "Reed II" shortInstrumentName = "Rd. II" }
-        {
-            \ReedTwoNumberOne
-        }
+        { \ReedTwoNumberOne }
+    >>
+}
+
+ReedTwoNumberTwoPart = {
+    <<
+        \new Staff \with { instrumentName = "Reed II" shortInstrumentName = "Rd. II" }
+        { \ReedTwoNumberTwo }
     >>
 }

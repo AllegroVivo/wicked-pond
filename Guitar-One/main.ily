@@ -2,12 +2,18 @@
 \language "english"
 
 \include "1-opening.ily"
+\include "2-no-one-mourns.ily"
 
 GuitarOneNumberOnePart = {
     <<
         \new Staff \with { instrumentName = "Guitar I" shortInstrumentName = "Gtr. I" }
-        {
-            \GuitarOneNumberOne
-        }
+        { \GuitarOneNumberOne }
+    >>
+}
+
+GuitarOneNumberTwoPart = {
+    <<
+        \new Staff \with { instrumentName = "Guitar I" shortInstrumentName = "Gtr. I" }
+        { \GuitarOneNumberTwo }
     >>
 }

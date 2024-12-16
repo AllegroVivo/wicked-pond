@@ -2,7 +2,6 @@
 \language "english"
 
 \include "../global.ily"
-\include "markups.lyi"
 
 PercussionNumberOne = \relative c {
     \NumberOneSetup \clef bass

@@ -2,7 +2,6 @@
 \language "english"
 
 \include "../global.ily"
-\include "markups.lyi"
 
 TrumpetOneNumberOne = \relative c'' {
     \NumberOneSetup \clef treble
@@ -78,6 +77,4 @@ TrumpetOneNumberOne = \relative c'' {
 
 % \score {
 %     \TrumpetOneNumberOne
-%     \layout {
-%     }
 % }

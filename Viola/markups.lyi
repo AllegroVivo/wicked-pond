@@ -1,9 +1,0 @@
-\version "2.24.2"
-
-%---------%
-% Markups %
-%---------%
-pizz = ^\markup { \italic "pizz." }
-arco = ^\markup { \italic "arco" }
-conSord = ^\markup { \italic "con sord." }
-senzaSord = ^\markup { \italic "senza sord." }

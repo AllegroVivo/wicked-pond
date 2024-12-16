@@ -2,7 +2,6 @@
 \language "english"
 
 \include "../global.ily"
-\include "markups.lyi"
 
 BassNumberOne = \relative c {
     \NumberOneSetup \clef bass
@@ -90,6 +89,4 @@ BassNumberOne = \relative c {
 
 % \score {
 %     \BassNumberOne
-%     \layout {
-%     }
 % }

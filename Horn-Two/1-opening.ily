@@ -2,7 +2,6 @@
 \language "english"
 
 \include "../global.ily"
-\include "markups.lyi"
 
 HornTwoNumberOne = \relative c'' {
     \NumberOneSetup \clef treble

@@ -2,13 +2,13 @@
 \language "english"
 
 \include "../global.ily"
-\include "markups.lyi"
 
 ReedTwoNumberOne = \relative c''' {
     \NumberOneSetup \clef treble
     \key c \major 
     
-    \grace { s8 } r4 a \ff \changeOboe a8 a4 c8 ~ |
+    \grace { s8 } \InstrumentChange "Oboe" #-0.5
+    r4 a \ff a8 a4 c8 ~ |
     c b4 b8 ~ b2 |
     r4 a a8 a4 c8 ~ |
     c b4 b8 ~ b2 |
@@ -21,7 +21,8 @@ ReedTwoNumberOne = \relative c''' {
     \repeat unfold 8 { g16-. cs-. fs,8-. } |
     \repeat unfold 8 { g16-. d'-. fs,8-. } | 
     R1^"To Bs. Ob." \fermata | \bar "||" \key b \major
-    fs,1 ~ \f \changeBsOboe |
+    \InstrumentChange "Bass Oboe" #-0.5
+    fs,1 ~ \f |
     fs2. r4 |
     b,\( b' ~ b8 as fs4 ~ |
     fs2 ~ fs8\) gs \tuplet 3/2 { as b cs } |
@@ -34,7 +35,7 @@ ReedTwoNumberOne = \relative c''' {
     fs8 \stopTrillSpan r r4^"To Oboe" r2 |
     R1 | \bar "||" \key c \major
     R1 * 19 |
-    r2 r4 \changeOboe c'' | \bar "||" \key b \major
+    r2 r4 c'' | \bar "||" \key b \major
     ds!1 ~ |
     ds ~ |
     ds2. ds8 es^^ |
@@ -55,7 +56,8 @@ ReedTwoNumberOne = \relative c''' {
     b) \fermata | \bar "||" \key a \major \time 4/4
     R1^"To Eng. Hn." |
     R1 * 4 | \key e \major
-    r2 b,( \p \changeEngHn |
+    \InstrumentChange "Eng. Hn." #-0.5
+    r2 b,( \p |
     fs' a ~ |
     a1) |
     r2 as,8( b ds fs |

@@ -2,12 +2,18 @@
 \language "english"
 
 \include "1-opening.ily"
+\include "2-no-one-mourns.ily"
 
 PercussionNumberOnePart = {
     <<
         \new Staff \with { instrumentName = "Percussion" shortInstrumentName = "Perc." }
-        {
-            \PercussionNumberOne
-        }
+        { \PercussionNumberOne }
+    >>
+}
+
+PercussionNumberTwoPart = {
+    <<
+        \new Staff \with { instrumentName = "Percussion" shortInstrumentName = "Perc." }
+        { \PercussionNumberTwo }
     >>
 }

@@ -2,7 +2,6 @@
 \language "english"
 
 \include "../global.ily"
-\include "1-markups.lyi"
 
 KeyboardTwoNumberOneRH = \relative c'' {
     \NumberOneSetup \clef treble
@@ -10,7 +9,8 @@ KeyboardTwoNumberOneRH = \relative c'' {
     
     \grace { s8 } <<
         {
-            b4\rest \TuttiBrass <e a c> q8 <f a c>4 <e g c>8 ~ |
+            \InstrumentChange "Tutti Brass" #-0.5
+            b4\rest <e a c> q8 <f a c>4 <e g c>8 ~ |
             q <g b c>4 q8 ~ q4 r |
             b,4\rest <e a c> q8 <f a c>4 <e g c>8 ~ |
             q <g b c>4 q8 ~ q4 r |
@@ -38,8 +38,8 @@ KeyboardTwoNumberOneRH = \relative c'' {
     <e'? g c>1 ~ |
     q |
     R1 \fermata | \bar "||" \key b \major
-    
-    r4 \SparklingRhodes fs'16 as b ds \repeat unfold 18 { fs,16 as b ds } | \time 6/4
+    \InstrumentChange "Sparkling Rhodes" #-0.5
+    r4 fs'16 as b ds \repeat unfold 18 { fs,16 as b ds } | \time 6/4
     \repeat unfold 6 { fs,16 as b ds } | \time 4/4
     R1 * 2 | 
     \repeat unfold 8 { fs,16 as b ds }
@@ -54,7 +54,7 @@ KeyboardTwoNumberOneRH = \relative c'' {
     b, fs' b, fs' es cs b fs'^^ | 
     R1 | \bar "||" \key d \major
     R1 * 4 |
-    r2 <d, fs a> ~ \arpeggio \mp \CelestaA |
+    r2 \InstrumentChange "Celesta" #0 <d, fs a> ~ \arpeggio \mp |
     q1 |
     <e gs b>2 \arpeggio <d fs a> ~ \arpeggio |
     q <gs b e> \arpeggio |
@@ -63,7 +63,8 @@ KeyboardTwoNumberOneRH = \relative c'' {
     <e gs b>2 \arpeggio <d fs a> ~ \arpeggio |
     q1 \fermata |
     R1 * 5 | \bar "||" \key a \major \time 4/4
-    \repeat tremolo 16 { <b a'>32( \MutedStgs <d fs>) | }
+    \InstrumentChange "Muted Stgs." #-0.5
+    \repeat tremolo 16 { <b a'>32( <d fs>) | }
     \repeat unfold 2 { \repeat tremolo 16 { <b a'>32( <d fs>) | } }
     \repeat unfold 2 { \repeat tremolo 16 { <b b'>( <d fs>) | } }
     \repeat tremolo 8 { <b a'>( <d fs>) }
@@ -78,9 +79,11 @@ KeyboardTwoNumberOneRH = \relative c'' {
     <a d fs a>1 ~ |
     q |
     R1 |
-    r4 \ottava #1 <a' d fs a>2. \arpeggio \pp \CelestaB \ottava #0
+    \InstrumentChange "Celesta" #0
+    r4 \ottava #1 <a' d fs a>2. \arpeggio \pp \ottava #0
     R1 * 4 |
-    r8 \SparklingRhodes cs,, fs[ gs] b4. <d, a'>8 ~ |
+    \InstrumentChange "Sparkling Rhodes" #-0.5
+    r8 cs,, fs[ gs] b4. <d, a'>8 ~ |
     q1 \fermata |
     r8 cs' fs[ gs] b4. <d, a'>8 ~ |
     q1 \fermata |

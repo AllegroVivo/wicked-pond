@@ -2,23 +2,22 @@
 \language "english"
 
 \include "../global.ily"
-\include "1-markups.lyi"
 
 KeyboardOneNumberOneRH = \relative c'''' {
     \NumberOneSetup \clef treble
     \key c \major 
     
-    \grace { s8 } s1 * 4 |
-    s1 * 4 |
+    \grace { s8 } s1 * 4 | \break
+    s1 * 4 | \break
     <<
         {
             \override Stem.details.beamed-lengths = #'(5)
-            \ottava #1 r16 \PianoXylo b-.[ r g-.] 
+            \ottava #1 r16 \InstrumentChange "Piano/Xylo." #-0.25 b-.[ r g-.] 
             \improvisationOn \hide Stem b,4 b b |
             b b b b \improvisationOff | \undo \hide Stem
             r16 c'-.[ r g-.] 
             \improvisationOn \hide Stem b,4 b b |
-            b b b b \improvisationOff | \undo \hide Stem
+            b b b b \improvisationOff | \undo \hide Stem \break
             r16 cs'-.[ r g-.] 
             \improvisationOn \hide Stem b,4 b b |
             b b b b \improvisationOff | \undo \hide Stem
@@ -39,15 +38,15 @@ KeyboardOneNumberOneRH = \relative c'''' {
             s1 |
         }
     >> \ottava #0
-    R1 \fermata | \bar "||" \key b \major
+    R1 \fermata | \bar "||" \key b \major \break
     << 
-        { ds,4 \arpeggio \Piano \f fs-. fs-. fs-. } 
+        { ds,4 \arpeggio \InstrumentChange "Piano" #0.5 \f fs-. fs-. fs-. } 
         \\ 
         { <ds, fs as>1 \laissezVibrer \arpeggio }
     >>
     \ottava #1 fs'''8-. fs,-. ds'-. ds,-. as'-. as,-. fs'-. fs,-. |
     fs'-. fs,-. ds'-. ds,-. \ottava #0 as'-. as,-. fs'-. fs,-. |
-    fs'-. fs,-. ds'-. ds,-. gs'-. gs,-. fs'-. fs,-. |
+    fs'-. fs,-. ds'-. ds,-. gs'-. gs,-. fs'-. fs,-. | \break
     ds'-.[ ds,-.] ds-. ds'-. ds-.[ ds,-.] as'-. as,-. | \time 6/4
     <b fs'>1. | \time 4/4
     r4 s r s |
@@ -59,51 +58,51 @@ KeyboardOneNumberOneRH = \relative c'''' {
     \tuplet 3/2 { fs,,8 \stopTrillSpan g fs } \tuplet 3/2 { b as ds }
     \tuplet 3/2 { d fs f } \tuplet 3/2 { a gs b }
     <as,! as'!>8-> <b b'>-> <cs cs'>-> <ds ds'>->
-    <e e'>-> <es es'>-> \tuplet 3/2 { <fs fs'>-> <gs gs'>-> <as as'>-> } |
-    \bar "||" \key c \major \time 2/2
+    <e e'>-> <es es'>-> \tuplet 3/2 { <fs fs'>-> <gs gs'>-> <as as'>-> } | 
+    \bar "||" \key c \major \time 2/2 \break
+    R1 * 4 | \break
+    R1 * 4 | \break
+    R1 * 4 | \break
     R1 * 4 |
-    R1 * 4 |
-    R1 * 4 |
-    R1 * 4 |
-    R1 * 4 | \bar "||" \key b\major
+    R1 * 4 | \bar "||" \key b \major \break
     fs'8 \ff ds b fs ds' b fs ds |
     b' fs ds b cs es fs fs' |
     b, fs' b, fs' es cs b fs'^^ |
-    r2 <fs,,, cs' fs> |
+    r2 <fs,,, cs' fs> | \break
     fs'''8 ds b fs ds' b fs ds |
     b' fs ds b cs es fs fs' |
     b, fs' b, fs' es cs b fs'^^ |
-    r2 \stemDown es,,16[ gs cs es] gs cs es gs | 
+    r2 \stemDown es,,16[ gs cs es] gs cs es gs |  \break
     \stemNeutral \bar "||" \key d \major \ottava #1
     \repeat tremolo 16 { <fs a!>32( <d! b'>) | }
     \repeat unfold 2 { \repeat tremolo 16 { <fs a>32( <d b'>) | } }
-    \repeat tremolo 16 { <fs a>32( \> <d b'>) | }
-    <d fs a>1:32 ~ \TremStgs \mp |
+    \repeat tremolo 16 { <fs a>32( \> <d b'>) | } \break
+    <d fs a>1:32 ~ \InstrumentChange "Trem. Strings" #0.75 \mp |
     \repeat unfold 4 { q:32 ~ | }
     q:32 | \ottava #0
-    R1 * 2 |
-    r2 <e, gs b> ~ \arpeggio \Piano |
+    R1 * 2 | \break
+    r2 \InstrumentChange "Piano" #0.5 <e, gs b> ~ \arpeggio |
     q <fs as cs> \arpeggio |
     <e gs b>1 \arpeggio |
     <fs as cs> \arpeggio |
-    <e b' d> \arpeggio \fermata | \bar "||" \key a \major \time 4/4
-    R1 * 4 |
+    <e b' d> \arpeggio \fermata | \bar "||" \key a \major \time 4/4 \break
+    R1 * 4 | \break
     R1 * 2 |
     \acciaccatura { fs8 } fs'4 \acciaccatura { cs,8 } cs'4 \acciaccatura { e,8 } e'2 |
-    R1 |
+    R1 | \break
     R1 * 2 | 
     r2 gs,,4 \p a |
     fs'2. a4 |
-    gs2 fs' |
+    gs2 fs' | \break
     d1 ~ |
     d |
     <a, d fs a> ~ \arpeggio |
-    q \fermata | \bar "||"
+    q \fermata | \bar "||" \break
     R1 * 2 |
     <a, d fs gs>1 \arpeggio |
-    R1 | \bar "||"
-    R1 * 4 | \key d \major
-    R1 * 4 |
+    R1 | \bar "||" \break
+    R1 * 4 | \bar "||" \key d \major \break
+    R1 * 4 | \break
     R1 * 2 |
     R1 \fermata | \bar "||"
 }
@@ -114,7 +113,7 @@ KeyboardOneNumberOneLH = \relative c, {
     
     \grace { s8 } <<
         { 
-            <a' a'>1 ~ \Piano | 
+            <a' a'>1 ~ \InstrumentChange "Piano" #-0.5 | 
             q2. <e' e'>4 | 
             <a, a'>1 ~ | 
             q2.  <e' e'>4 |
@@ -160,7 +159,7 @@ KeyboardOneNumberOneLH = \relative c, {
             \stemUp e,,8 b' ~ b4 ds,8 as' ~ as4 |
             gs8 ds' ~ \stemDown ds4 \stemUp g,2 |
         }
-    >>
+    >> \break
     \repeat unfold 2 { \repeat tremolo 16 { fs,32( fs') | } }
     \tuplet 3/2 { fs8 g fs } \tuplet 3/2 { b as ds }
     \tuplet 3/2 { d fs f } \tuplet 3/2 { a gs b }
@@ -171,7 +170,7 @@ KeyboardOneNumberOneLH = \relative c, {
     <c c'>1-> | 
     q2. r4 | 
     R1 | 
-    r2 \tweak NoteHead.style #'xcircle b''4^^ \sfz \Cluster r |
+    r2 \tweak NoteHead.style #'xcircle b''4^^ \sfz \InstrumentChange "Cluster" #0.5 r | \break
     R1 |
     r2 r4 \ottava #-1 <a,, a'>-> \ottava #0 |
     R1 |

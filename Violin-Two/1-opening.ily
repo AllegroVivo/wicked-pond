@@ -2,7 +2,6 @@
 \language "english"
 
 \include "../global.ily"
-\include "markups.lyi"
 
 ViolinTwoNumberOne = \relative c' {
     \NumberOneSetup \clef treble
@@ -91,6 +90,4 @@ ViolinTwoNumberOne = \relative c' {
 
 % \score {
 %     \ViolinTwoNumberOne
-%     \layout {
-%     }
 % }

@@ -2,7 +2,6 @@
 \language "english"
 
 \include "../global.ily"
-\include "markups.lyi"
 
 ViolaNumberOne = \relative c' {
     \NumberOneSetup \clef alto
@@ -91,6 +90,4 @@ ViolaNumberOne = \relative c' {
 
 % \score {
 %     \ViolaNumberOne
-%     \layout {
-%     }
 % }

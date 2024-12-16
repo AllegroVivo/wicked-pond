@@ -7,6 +7,7 @@
 DrumsNumberOne = \drummode {
     \NumberOneSetup \clef percussion
     
+    \grace { s8 }
     % TODO: Reduce size of 'Large Piatti' without reducing note size.
     \magnifyMusic #1.5
     piatti1-> ^\laissezVibrer |
@@ -29,12 +30,12 @@ DrumsNumberOne = \drummode {
     
 }
 
-\score {
-    \new DrumStaff \with {
-        instrumentName = "Drums"
-        shortInstrumentName = "Dr." 
-        drumStyleTable = #(alist->hash-table wicked-drums-style)
-    } { \DrumsNumberOne }
-    \layout {
-    }
-}
+% \score {
+%     \new DrumStaff \with {
+%         instrumentName = "Drums"
+%         shortInstrumentName = "Dr." 
+%         drumStyleTable = #(alist->hash-table wicked-drums-style)
+%     } { \DrumsNumberOne }
+%     \layout {
+%     }
+% }

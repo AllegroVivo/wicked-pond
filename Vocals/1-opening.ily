@@ -2,7 +2,6 @@
 \language "english"
 
 \include "../global.ily"
-\include "markups.lyi"
 
 VocalsNumberOneTop = \relative c' {
     \NumberOneSetup \clef treble
@@ -173,6 +172,4 @@ VocalsNumberOneBottom = \relative c' {
 %         \new Staff = "mid" { \new Voice = "voxmid" \VocalsNumberOneMid } 
 %         \new Staff = "btm" { \new Voice = "voxbtm" \VocalsNumberOneBottom }
 %     >>
-%     \layout {
-%      }
 % }

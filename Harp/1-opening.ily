@@ -2,7 +2,6 @@
 \language "english"
 
 \include "../global.ily"
-\include "markups.lyi"
 
 HarpNumberOneRH = \relative c''' {
     \NumberOneSetup \clef treble
@@ -112,6 +111,4 @@ HarpNumberOneLH = \relative c, {
 %         \new Staff = "rh" << \HarpNumberOneRH >>
 %         \new Staff = "lh" << \HarpNumberOneLH >>
 %     >>
-%     \layout {
-%     }
 % }

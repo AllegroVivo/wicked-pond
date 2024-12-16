@@ -2,13 +2,12 @@
 \language "english"
 
 \include "../global.ily"
-\include "markups.lyi"
 
 CelloNumberOne = \relative c {
     \NumberOneSetup \clef bass
     \key c \major 
     
-    \grace { g8( } a1)-> ~ \sfzff |
+    \acciaccatura { s16 g( } a1)-> ~ \sfzff |
     a2 ~ a8 r e'4 \ten |
     \grace { g,8( } a1)-> ~ |
     a2 ~ a8 r e'4 \ten |
@@ -107,6 +106,4 @@ CelloNumberOne = \relative c {
 
 % \score {
 %     \CelloNumberOne
-%     \layout {
-%     }
 % }

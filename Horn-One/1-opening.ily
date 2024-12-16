@@ -2,7 +2,6 @@
 \language "english"
 
 \include "../global.ily"
-\include "markups.lyi"
 
 HornOneNumberOne = \relative c'' {
     \NumberOneSetup \clef treble
@@ -92,6 +91,4 @@ HornOneNumberOne = \relative c'' {
 
 % \score {
 %     \HornOneNumberOne
-%     \layout {
-%     }
 % }
