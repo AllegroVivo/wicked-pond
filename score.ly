@@ -1,37 +1,37 @@
 \version "2.24.2"
 \language "english"
 
-\include "Reed-One/main.ily"
-\include "Reed-Two/main.ily"
-\include "Reed-Three/main.ily"
-\include "Reed-Four/main.ily"
+\include "Reed-One/main.ly"
+\include "Reed-Two/main.ly"
+\include "Reed-Three/main.ly"
+\include "Reed-Four/main.ly"
 
-\include "Horn-One/main.ily"
-\include "Horn-Two/main.ily"
-\include "Trumpet-One/main.ily"
-\include "Trumpet-Two/main.ily"
-\include "Trombone-One/main.ily"
-\include "Trombone-Two/main.ily"
+\include "Horn-One/main.ly"
+\include "Horn-Two/main.ly"
+\include "Trumpet-One/main.ly"
+\include "Trumpet-Two/main.ly"
+\include "Trombone-One/main.ly"
+\include "Trombone-Two/main.ly"
 
-\include "Percussion/main.ily"
-\include "Drums/main.ily"
+\include "Percussion/main.ly"
+\include "Drums/main.ly"
 
-\include "Guitar-One/main.ily"
-\include "Guitar-Two/main.ily"
+\include "Guitar-One/main.ly"
+\include "Guitar-Two/main.ly"
 
-\include "Vocals/main.ily"
-\include "Rehearsal-Piano/main.ily"
+\include "Vocals/main.ly"
+\include "Rehearsal-Piano/main.ly"
 
-\include "Harp/main.ily"
-\include "Keyboard-One/main.ily"
-\include "Keyboard-Two/main.ily"
-\include "Keyboard-Three/main.ily"
+\include "Harp/main.ly"
+\include "Keyboard-One/main.ly"
+\include "Keyboard-Two/main.ly"
+\include "Keyboard-Three/main.ly"
 
-\include "Violin-One/main.ily"
-\include "Violin-Two/main.ily"
-\include "Viola/main.ily"
-\include "Cello/main.ily"
-\include "Bass/main.ily"
+\include "Violin-One/main.ly"
+\include "Violin-Two/main.ly"
+\include "Viola/main.ly"
+\include "Cello/main.ly"
+\include "Bass/main.ly"
 
 \header {
     title = "WICKED"
@@ -313,10 +313,10 @@
             <<
                 % Reeds 1-4
                 \new StaffGroup <<
-                    \new Staff { a }
-                    \new Staff { a }
-                    \new Staff { a }
-                    \new Staff { a }
+                    \ReedOneNumberThreeAPart
+                    \ReedTwoNumberThreeAPart
+                    \ReedThreeNumberThreeAPart
+                    \ReedFourNumberThreeAPart
                 >>
                 % Brass
                 \new ChoirStaff <<
@@ -324,56 +324,56 @@
                     \new GrandStaff \with {
                         systemStartDelimiter = #'SystemStartSquare
                     } <<
-                        \new Staff { a }
-                        \new Staff { a }
+                        \HornOneNumberThreeAPart
+                        \HornTwoNumberThreeAPart
                     >>
                     % Trumpets 1-2
                     \new GrandStaff \with { 
                         systemStartDelimiter = #'SystemStartSquare
                     } <<
-                        \new Staff { a }
-                        \new Staff { a }
+                        \TrumpetOneNumberThreeAPart
+                        \TrumpetTwoNumberThreeAPart
                     >>
                     % Trombones 1-2
                     \new GrandStaff \with {
                         systemStartDelimiter = #'SystemStartSquare
                     } <<
-                        \new Staff { a }
-                        \new Staff { a }
+                        \TromboneOneNumberThreeAPart
+                        \TromboneTwoNumberThreeAPart
                     >>
                 >>
                 % Percussion & Drums
                 \new StaffGroup <<
-                    \new Staff { a }
+                    \PercussionNumberThreeAPart
                     \new Staff { a }  % Drums... eventually
                 >>
                 % Guitars 1-2
                 \new StaffGroup <<
-                    \new Staff { a }
-                    \new Staff { a }
+                    \GuitarOneNumberThreeAPart
+                    \GuitarTwoNumberThreeAPart
                 >>
                 % Vocals
-                \new Staff { a }
+                \VocalsNumberThreeAPart
                 % Harp
-                \new Staff { a }
+                \HarpNumberThreeAPart
                 % Keyboard 1
-                \new Staff { a }
+                \KeyboardOneNumberThreeAPart
                 % Keyboard 2
-                \new Staff { a }
+                \KeyboardTwoNumberThreeAPart
                 % Keyboard 3
-                \new Staff { a }
+                \KeyboardThreeNumberThreeAPart
                 % Strings
                 \new StaffGroup <<
                     % Violins 1-2
                     \new GrandStaff \with {
                         systemStartDelimiter = #'SystemStartSquare
                     } <<
-                        \new Staff { a }
-                        \new Staff { a }
+                        \ViolinOneNumberThreeAPart
+                        \ViolinTwoNumberThreeAPart
                     >>
-                    \new Staff { a }
-                    \new Staff { a }
-                    \new Staff { a }
+                    \ViolaNumberThreeAPart
+                    \CelloNumberThreeAPart
+                    \BassNumberThreeAPart
                 >>
             >>
         }

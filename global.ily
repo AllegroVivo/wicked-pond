@@ -25,12 +25,27 @@ VocalistName =
   \smallCaps #mkp
   #})
 
+#(define (ends-with? str suffix)
+   (let* ((len (string-length str))
+          (suflen (string-length suffix)))
+     (and (>= len suflen)
+          (string=? (substring str (- len suflen)) suffix))))
+
+%% Loads all local directory modules ending with '.ily' into the calling module.
+#(define (load-all-ily)
+   (for-each
+     (lambda (f)
+       (when (ends-with? f ".ily")
+         (ly:include f)))
+     (directory-files ".")))
+
 %---------------------%
 % Dynamics & Markings %
 %---------------------%
+sfzp = _\markup { \translate #'(-2 . 0) \dynamic sfz - \dynamic p }
 sfzpp = _\markup { \translate #'(-3 . 0) \dynamic sfz - \dynamic pp }
 sfzf = _\markup { \translate #'(-2 . 0) \dynamic sfz - \dynamic f }
-sfzff = _\markup { \translate #'(-2 . 0) \dynamic sfz - \dynamic ff }
+sfzff = _\markup { \translate #'(-3 . 0) \dynamic sfz - \dynamic ff }
 
 ten = ^\markup { \translate #'(-0.6 . 0) \italic "ten." }
 solo = ^\markup { \translate #'(-0.6 . 0) \italic "solo" }
