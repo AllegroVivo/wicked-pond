@@ -1,25 +1,5 @@
 \version "2.24.2"
 
-%-------------%
-% Song Setups %
-%-------------%
-GlobalSetup = {
-    \set Staff.printKeyCancellation = ##f
-    \set PianoStaff.connectArpeggios = ##t
-    \numericTimeSignature
-    \override Glissando.style = #'trill
-}
-%-------------%
-NumberOneSetup = {
-    \GlobalSetup
-    \time 4/4
-}
-%-------------%
-NumberTwoSetup = {
-    \GlobalSetup
-    \time 4/4
-}
-
 %-----------%
 % Functions %
 %-----------%
@@ -56,7 +36,51 @@ ten = ^\markup { \translate #'(-0.6 . 0) \italic "ten." }
 solo = ^\markup { \translate #'(-0.6 . 0) \italic "solo" }
 sim = _\markup { \translate #'(-0.6 . 0) \italic "sim." }
 
-pizz = ^\markup { \italic "pizz." }
-arco = ^\markup { \italic "arco" }
-conSord = ^\markup { \italic "con sord." }
-senzaSord = ^\markup { \italic "senza sord." }
+pizz = ^\markup { \translate #'(-1 . 0) \italic "pizz." }
+arco = ^\markup { \translate #'(-1 . 0) \italic "arco" }
+conSord = ^\markup { \translate #'(-1 . 0) \italic "con sord." }
+senzaSord = ^\markup { \translate #'(-1 . 0) \italic "senza sord." }
+
+%-------------%
+% Song Setups %
+%-------------%
+GlobalSetup = {
+    \set Staff.printKeyCancellation = ##f
+    \set PianoStaff.connectArpeggios = ##t
+    \numericTimeSignature
+    \override Glissando.style = #'trill
+    \set Staff.extraNatural = ##f
+}
+%-------------%
+NumberOneSetup = {
+    \GlobalSetup
+    \time 4/4
+}
+%-------------%
+NumberTwoSetup = {
+    \GlobalSetup
+    \time 4/4
+}
+%-------------%
+NumberTwoASetup = {
+    \GlobalSetup
+    \time 4/4
+}
+%-------------%
+NumberThreeSetup = {
+    \GlobalSetup
+    \time 4/4
+    \partial 4
+}
+%-------------%
+NumberThreeASetup = {
+    \GlobalSetup
+    \time 6/4
+    \partial 4
+}
+%-------------%
+
+%---------------%
+% Miscellaneous %
+%---------------%
+ShizTacet = \relative c { r4 | R1 * 11 \caesura | R1 \fermata | R1 | R1 \fermata | }

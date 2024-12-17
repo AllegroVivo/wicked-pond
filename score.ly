@@ -49,135 +49,261 @@
 }
 
 \book {
+%     \bookpart {
+%         \header {
+%             title = "1. Opening"
+%             composer = \markup \column { 
+%                 \line { "Music & Lyrics by:" }
+%                 \line { \italic "Stephen Schwartz" }
+%             }
+%         }
+%         \score {
+%             <<
+%                 \new StaffGroup <<
+%                     \ReedOneNumberOnePart
+%                     \ReedTwoNumberOnePart
+%                     \ReedThreeNumberOnePart
+%                     \ReedFourNumberOnePart
+%                 >>
+%                 \new ChoirStaff <<
+%                     \new GrandStaff \with {
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \HornOneNumberOnePart
+%                         \HornTwoNumberOnePart
+%                     >>
+%                     \new GrandStaff \with { 
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \TrumpetOneNumberOnePart
+%                         \TrumpetTwoNumberOnePart
+%                     >>
+%                     \new GrandStaff \with {
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \TromboneOneNumberOnePart
+%                         \TromboneTwoNumberOnePart
+%                     >>
+%                 >>
+%                 \new StaffGroup <<
+%                     \PercussionNumberOnePart
+%                     \new Staff { a }  % Drums... eventually
+%                 >>
+%                 \new StaffGroup <<
+%                     \GuitarOneNumberOnePart
+%                     \GuitarTwoNumberOnePart
+%                 >>
+%                 \VocalsNumberOnePart
+%                 \HarpNumberOnePart
+%                 \KeyboardOneNumberOnePart
+%                 \KeyboardTwoNumberOnePart
+%                 \KeyboardThreeNumberOnePart
+%                 \new StaffGroup <<
+%                     \new GrandStaff \with {
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \ViolinOneNumberOnePart
+%                         \ViolinTwoNumberOnePart
+%                     >>
+%                     \ViolaNumberOnePart
+%                     \CelloNumberOnePart
+%                     \BassNumberOnePart
+%                 >>
+%             >>
+%         }
+%     }
+%     \bookpart {
+%         \header {
+%             title = "2. No One Mourns the Wicked"
+%             composer = \markup \column { 
+%                 \line { "Music & Lyrics by:" }
+%                 \line { \italic "Stephen Schwartz" }
+%             }
+%         }
+%         \score {
+%             <<
+%                 \new StaffGroup <<
+%                     \ReedOneNumberTwoPart
+%                     \ReedTwoNumberTwoPart
+%                     \ReedThreeNumberTwoPart
+%                     \ReedFourNumberTwoPart
+%                 >>
+%                 \new ChoirStaff <<
+%                     \new GrandStaff \with {
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \HornOneNumberTwoPart
+%                         \HornTwoNumberTwoPart
+%                     >>
+%                     \new GrandStaff \with { 
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \TrumpetOneNumberTwoPart
+%                         \TrumpetTwoNumberTwoPart
+%                     >>
+%                     \new GrandStaff \with {
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \TromboneOneNumberTwoPart
+%                         \TromboneTwoNumberTwoPart
+%                     >>
+%                 >>
+%                 \new StaffGroup <<
+%                     \PercussionNumberTwoPart
+%                     \new Staff { a }  % Drums... eventually
+%                 >>
+%                 \new StaffGroup <<
+%                     \GuitarOneNumberTwoPart
+%                     \GuitarTwoNumberTwoPart
+%                 >>
+%                 \VocalsNumberTwoPart
+%                 \HarpNumberTwoPart
+%                 \KeyboardOneNumberTwoPart
+%                 \KeyboardTwoNumberTwoPart
+%                 \KeyboardThreeNumberTwoPart
+%                 \new StaffGroup <<
+%                     \new GrandStaff \with {
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \ViolinOneNumberTwoPart
+%                         \ViolinTwoNumberTwoPart
+%                     >>
+%                     \ViolaNumberTwoPart
+%                     \CelloNumberTwoPart
+%                     \BassNumberTwoPart
+%                 >>
+%             >>
+%         }
+%     }
+%     \bookpart {
+%         \header {
+%             title = "2A. Elphaba's Entrance"
+%             composer = \markup \column { 
+%                 \line { "Music & Lyrics by:" }
+%                 \line { \italic "Stephen Schwartz" }
+%             }
+%         }
+%         \score {
+%             <<
+%                 \new StaffGroup <<
+%                     \ReedOneNumberTwoAPart
+%                     \ReedTwoNumberTwoAPart
+%                     \ReedThreeNumberTwoAPart
+%                     \ReedFourNumberTwoAPart
+%                 >>
+%                 \new ChoirStaff <<
+%                     \new GrandStaff \with {
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \HornOneNumberTwoAPart
+%                         \HornTwoNumberTwoAPart
+%                     >>
+%                     \new GrandStaff \with { 
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \TrumpetOneNumberTwoAPart
+%                         \TrumpetTwoNumberTwoAPart
+%                     >>
+%                     \new GrandStaff \with {
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \TromboneOneNumberTwoAPart
+%                         \TromboneTwoNumberTwoAPart
+%                     >>
+%                 >>
+%                 \new StaffGroup <<
+%                     \PercussionNumberTwoAPart
+%                     \new Staff { a }  % Drums... eventually
+%                 >>
+%                 \new StaffGroup <<
+%                     \GuitarOneNumberTwoAPart
+%                     \GuitarTwoNumberTwoAPart
+%                 >>
+%                 \VocalsNumberTwoAPart
+%                 \HarpNumberTwoAPart
+%                 \KeyboardOneNumberTwoAPart
+%                 \KeyboardTwoNumberTwoAPart
+%                 \KeyboardThreeNumberTwoAPart
+%                 \new StaffGroup <<
+%                     \new GrandStaff \with {
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \ViolinOneNumberTwoAPart
+%                         \ViolinTwoNumberTwoAPart
+%                     >>
+%                     \ViolaNumberTwoAPart
+%                     \CelloNumberTwoAPart
+%                     \BassNumberTwoAPart
+%                 >>
+%             >>
+%         }
+%     }
+%     \bookpart {
+%         \header {
+%             title = "3. Dear Old Shiz"
+%             composer = \markup \column { 
+%                 \line { "Music & Lyrics by:" }
+%                 \line { \italic "Stephen Schwartz" }
+%             }
+%         }
+%         \score {
+%             <<
+%                 \new StaffGroup <<
+%                     \ReedOneNumberThreePart
+%                     \ReedTwoNumberThreePart
+%                     \ReedThreeNumberThreePart
+%                     \ReedFourNumberThreePart
+%                 >>
+%                 \new ChoirStaff <<
+%                     \new GrandStaff \with {
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \HornOneNumberThreePart
+%                         \HornTwoNumberThreePart
+%                     >>
+%                     \new GrandStaff \with { 
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \TrumpetOneNumberThreePart
+%                         \TrumpetTwoNumberThreePart
+%                     >>
+%                     \new GrandStaff \with {
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \TromboneOneNumberThreePart
+%                         \TromboneTwoNumberThreePart
+%                     >>
+%                 >>
+%                 \new StaffGroup <<
+%                     \PercussionNumberThreePart
+%                     \new Staff { a }  % Drums... eventually
+%                 >>
+%                 \new StaffGroup <<
+%                     \GuitarOneNumberThreePart
+%                     \GuitarTwoNumberThreePart
+%                 >>
+%                 \VocalsNumberThreePart
+%                 \HarpNumberThreePart
+%                 \KeyboardOneNumberThreePart
+%                 \KeyboardTwoNumberThreePart
+%                 \KeyboardThreeNumberThreePart
+%                 \new StaffGroup <<
+%                     \new GrandStaff \with {
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \ViolinOneNumberThreePart
+%                         \ViolinTwoNumberThreePart
+%                     >>
+%                     \ViolaNumberThreePart
+%                     \CelloNumberThreePart
+%                     \BassNumberThreePart
+%                 >>
+%             >>
+%         }
+%     }
     \bookpart {
         \header {
-            title = "1. Opening"
-            composer = \markup \column { 
-                \line { "Music & Lyrics by:" }
-                \line { \italic "Stephen Schwartz" }
-            }
-        }
-        \score {
-            <<
-                \new StaffGroup <<
-                    \ReedOneNumberOnePart
-                    \ReedTwoNumberOnePart
-                    \ReedThreeNumberOnePart
-                    \ReedFourNumberOnePart
-                >>
-                \new ChoirStaff <<
-                    \new GrandStaff \with {
-                        systemStartDelimiter = #'SystemStartSquare
-                    } <<
-                        \HornOneNumberOnePart
-                        \HornTwoNumberOnePart
-                    >>
-                    \new GrandStaff \with { 
-                        systemStartDelimiter = #'SystemStartSquare
-                    } <<
-                        \TrumpetOneNumberOnePart
-                        \TrumpetTwoNumberOnePart
-                    >>
-                    \new GrandStaff \with {
-                        systemStartDelimiter = #'SystemStartSquare
-                    } <<
-                        \TromboneOneNumberOnePart
-                        \TromboneTwoNumberOnePart
-                    >>
-                >>
-                \new StaffGroup <<
-                    \PercussionNumberOnePart
-                    \new Staff { a }  % Drums... eventually
-                >>
-                \new StaffGroup <<
-                    \GuitarOneNumberOnePart
-                    \GuitarTwoNumberOnePart
-                >>
-                \VocalsNumberOnePart
-                \HarpNumberOnePart
-                \KeyboardOneNumberOnePart
-                \KeyboardTwoNumberOnePart
-                \KeyboardThreeNumberOnePart
-                \new StaffGroup <<
-                    \new GrandStaff \with {
-                        systemStartDelimiter = #'SystemStartSquare
-                    } <<
-                        \ViolinOneNumberOnePart
-                        \ViolinTwoNumberOnePart
-                    >>
-                    \ViolaNumberOnePart
-                    \CelloNumberOnePart
-                    \BassNumberOnePart
-                >>
-            >>
-        }
-    }
-    \bookpart {
-        \header {
-            title = "2. No One Mourns the Wicked"
-            composer = \markup \column { 
-                \line { "Music & Lyrics by:" }
-                \line { \italic "Stephen Schwartz" }
-            }
-        }
-        \score {
-            <<
-                \new StaffGroup <<
-                    \ReedOneNumberTwoPart
-                    \ReedTwoNumberTwoPart
-                    \ReedThreeNumberTwoPart
-                    \ReedFourNumberTwoPart
-                >>
-                \new ChoirStaff <<
-                    \new GrandStaff \with {
-                        systemStartDelimiter = #'SystemStartSquare
-                    } <<
-                        \HornOneNumberTwoPart
-                        \HornTwoNumberTwoPart
-                    >>
-                    \new GrandStaff \with { 
-                        systemStartDelimiter = #'SystemStartSquare
-                    } <<
-                        \TrumpetOneNumberTwoPart
-                        \TrumpetTwoNumberTwoPart
-                    >>
-                    \new GrandStaff \with {
-                        systemStartDelimiter = #'SystemStartSquare
-                    } <<
-                        \TromboneOneNumberTwoPart
-                        \TromboneTwoNumberTwoPart
-                    >>
-                >>
-                \new StaffGroup <<
-                    \PercussionNumberTwoPart
-                    \new Staff { a }  % Drums... eventually
-                >>
-                \new StaffGroup <<
-                    \GuitarOneNumberTwoPart
-                    \GuitarTwoNumberTwoPart
-                >>
-                \VocalsNumberTwoPart
-                \HarpNumberTwoPart
-                \KeyboardOneNumberTwoPart
-                \KeyboardTwoNumberTwoPart
-                \KeyboardThreeNumberTwoPart
-                \new StaffGroup <<
-                    \new GrandStaff \with {
-                        systemStartDelimiter = #'SystemStartSquare
-                    } <<
-                        \ViolinOneNumberTwoPart
-                        \ViolinTwoNumberTwoPart
-                    >>
-                    \ViolaNumberTwoPart
-                    \CelloNumberTwoPart
-                    \BassNumberTwoPart
-                >>
-            >>
-        }
-    }
-    \bookpart {
-        \header {
-            title = "2A. Elphaba's Entrance"
+            title = "3A. Jeweled Shoes"
             composer = \markup \column { 
                 \line { "Music & Lyrics by:" }
                 \line { \italic "Stephen Schwartz" }

@@ -3,6 +3,8 @@
 
 \include "1-opening.ily"
 \include "2-no-one-mourns.ily"
+\include "2a-elphaba's-entrance.ily"
+\include "3-dear-old-shiz.ily"
 
 ReedFourNumberOnePart = {
     <<
@@ -15,5 +17,19 @@ ReedFourNumberTwoPart = {
     <<
         \new Staff \with { instrumentName = "Reed IV" shortInstrumentName = "Rd. IV" }
         { \ReedFourNumberTwo }
+    >>
+}
+
+ReedFourNumberTwoAPart = {
+    <<
+        \new Staff \with { instrumentName = "Reed IV" shortInstrumentName = "Rd. IV" }
+        { \ReedFourNumberTwoA }
+    >>
+}
+
+ReedFourNumberThreePart = {
+    <<
+        \new Staff \with { instrumentName = "Reed IV" shortInstrumentName = "Rd. IV" }
+        { \ReedFourNumberThree }
     >>
 }
