@@ -25,20 +25,6 @@ VocalistName =
   \smallCaps #mkp
   #})
 
-#(define (ends-with? str suffix)
-   (let* ((len (string-length str))
-          (suflen (string-length suffix)))
-     (and (>= len suflen)
-          (string=? (substring str (- len suflen)) suffix))))
-
-%% Loads all local directory modules ending with '.ily' into the calling module.
-#(define (load-all-ily)
-   (for-each
-     (lambda (f)
-       (when (ends-with? f ".ily")
-         (ly:include f)))
-     (directory-files ".")))
-
 %---------------------%
 % Dynamics & Markings %
 %---------------------%
@@ -94,8 +80,14 @@ NumberThreeASetup = {
     \partial 4
 }
 %-------------%
+NumberThreeBSetup = {
+    \GlobalSetup
+    \time 6/8
+}
+%-------------%
 
 %---------------%
 % Miscellaneous %
 %---------------%
 ShizTacet = \relative c { r4 | R1 * 11 \caesura | R1 \fermata | R1 | R1 \fermata | }
+LetHerGoTacet = \relative c { R2. * 15 | r4. r \fermata }

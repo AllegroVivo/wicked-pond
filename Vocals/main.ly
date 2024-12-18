@@ -6,6 +6,7 @@
 \include "2a-elphaba's-entrance.ily"
 \include "3-dear-old-shiz.ily"
 \include "3a-jeweled-shoes.ily"
+\include "3b-let-her-go.ily"
 
 VocalsNumberOnePart = {
     \new ChoirStaff \with { instrumentName = " " shortInstrumentName = " " } <<
@@ -63,5 +64,13 @@ VocalsNumberThreeAPart = {
         \new Staff = "top" << \VocalsNumberThreeATop >>
         \new Staff = "mid" << \VocalsNumberThreeAMid >>
         \new Staff = "btm" << \VocalsNumberThreeABottom >>
+    >>
+}
+
+VocalsNumberThreeBPart = {
+    \new ChoirStaff \with { instrumentName = " " shortInstrumentName = " " } <<
+        \new Staff = "top" << \VocalsNumberThreeBTop >>
+        \new Staff = "mid" << \VocalsNumberThreeBMid >>
+        \new Staff = "btm" << \VocalsNumberThreeBBottom >>
     >>
 }

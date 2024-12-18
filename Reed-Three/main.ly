@@ -6,6 +6,7 @@
 \include "2a-elphaba's-entrance.ily"
 \include "3-dear-old-shiz.ily"
 \include "3a-jeweled-shoes.ily"
+\include "3b-let-her-go.ily"
 
 ReedThreeNumberOnePart = {
     <<
@@ -39,5 +40,12 @@ ReedThreeNumberThreeAPart = {
     <<
         \new Staff \with { instrumentName = "Reed III" shortInstrumentName = "Rd. III" }
         { \ReedThreeNumberThreeA }
+    >>
+}
+
+ReedThreeNumberThreeBPart = {
+    <<
+        \new Staff \with { instrumentName = "Reed III" shortInstrumentName = "Rd. III" }
+        { \ReedThreeNumberThreeB }
     >>
 }

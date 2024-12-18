@@ -6,6 +6,7 @@
 \include "2a-elphaba's-entrance.ily"
 \include "3-dear-old-shiz.ily"
 \include "3a-jeweled-shoes.ily"
+\include "3b-let-her-go.ily"
 
 GuitarOneNumberOnePart = {
     <<
@@ -39,5 +40,12 @@ GuitarOneNumberThreeAPart = {
     <<
         \new Staff \with { instrumentName = "Guitar I" shortInstrumentName = "Gtr. I" }
         { \GuitarOneNumberThreeA }
+    >>
+}
+
+GuitarOneNumberThreeBPart = {
+    <<
+        \new Staff \with { instrumentName = "Guitar I" shortInstrumentName = "Gtr. I" }
+        { \GuitarOneNumberThreeB }
     >>
 }

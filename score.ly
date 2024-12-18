@@ -301,9 +301,72 @@
 %             >>
 %         }
 %     }
+%     \bookpart {
+%         \header {
+%             title = "3A. Jeweled Shoes"
+%             composer = \markup \column { 
+%                 \line { "Music & Lyrics by:" }
+%                 \line { \italic "Stephen Schwartz" }
+%             }
+%         }
+%         \score {
+%             <<
+%                 \new StaffGroup <<
+%                     \ReedOneNumberThreeAPart
+%                     \ReedTwoNumberThreeAPart
+%                     \ReedThreeNumberThreeAPart
+%                     \ReedFourNumberThreeAPart
+%                 >>
+%                 \new ChoirStaff <<
+%                     \new GrandStaff \with {
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \HornOneNumberThreeAPart
+%                         \HornTwoNumberThreeAPart
+%                     >>
+%                     \new GrandStaff \with { 
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \TrumpetOneNumberThreeAPart
+%                         \TrumpetTwoNumberThreeAPart
+%                     >>
+%                     \new GrandStaff \with {
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \TromboneOneNumberThreeAPart
+%                         \TromboneTwoNumberThreeAPart
+%                     >>
+%                 >>
+%                 \new StaffGroup <<
+%                     \PercussionNumberThreeAPart
+%                     \new Staff { a }  % Drums... eventually
+%                 >>
+%                 \new StaffGroup <<
+%                     \GuitarOneNumberThreeAPart
+%                     \GuitarTwoNumberThreeAPart
+%                 >>
+%                 \VocalsNumberThreeAPart
+%                 \HarpNumberThreeAPart
+%                 \KeyboardOneNumberThreeAPart
+%                 \KeyboardTwoNumberThreeAPart
+%                 \KeyboardThreeNumberThreeAPart
+%                 \new StaffGroup <<
+%                     \new GrandStaff \with {
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \ViolinOneNumberThreeAPart
+%                         \ViolinTwoNumberThreeAPart
+%                     >>
+%                     \ViolaNumberThreeAPart
+%                     \CelloNumberThreeAPart
+%                     \BassNumberThreeAPart
+%                 >>
+%             >>
+%         }
+%     }
     \bookpart {
         \header {
-            title = "3A. Jeweled Shoes"
+            title = "3B. Let Her Go!"
             composer = \markup \column { 
                 \line { "Music & Lyrics by:" }
                 \line { \italic "Stephen Schwartz" }
@@ -313,10 +376,10 @@
             <<
                 % Reeds 1-4
                 \new StaffGroup <<
-                    \ReedOneNumberThreeAPart
-                    \ReedTwoNumberThreeAPart
-                    \ReedThreeNumberThreeAPart
-                    \ReedFourNumberThreeAPart
+                    \ReedOneNumberThreeBPart
+                    \ReedOneNumberThreeBPart
+                    \ReedThreeNumberThreeBPart
+                    \ReedFourNumberThreeBPart
                 >>
                 % Brass
                 \new ChoirStaff <<
@@ -324,56 +387,56 @@
                     \new GrandStaff \with {
                         systemStartDelimiter = #'SystemStartSquare
                     } <<
-                        \HornOneNumberThreeAPart
-                        \HornTwoNumberThreeAPart
+                        \HornOneNumberThreeBPart
+                        \HornTwoNumberThreeBPart
                     >>
                     % Trumpets 1-2
                     \new GrandStaff \with { 
                         systemStartDelimiter = #'SystemStartSquare
                     } <<
-                        \TrumpetOneNumberThreeAPart
-                        \TrumpetTwoNumberThreeAPart
+                        \TrumpetOneNumberThreeBPart
+                        \TrumpetTwoNumberThreeBPart
                     >>
                     % Trombones 1-2
                     \new GrandStaff \with {
                         systemStartDelimiter = #'SystemStartSquare
                     } <<
-                        \TromboneOneNumberThreeAPart
-                        \TromboneTwoNumberThreeAPart
+                        \TromboneOneNumberThreeBPart
+                        \TromboneTwoNumberThreeBPart
                     >>
                 >>
                 % Percussion & Drums
                 \new StaffGroup <<
-                    \PercussionNumberThreeAPart
+                    \PercussionNumberThreeBPart
                     \new Staff { a }  % Drums... eventually
                 >>
                 % Guitars 1-2
                 \new StaffGroup <<
-                    \GuitarOneNumberThreeAPart
-                    \GuitarTwoNumberThreeAPart
+                    \GuitarOneNumberThreeBPart
+                    \GuitarTwoNumberThreeBPart
                 >>
                 % Vocals
-                \VocalsNumberThreeAPart
+                \VocalsNumberThreeBPart
                 % Harp
-                \HarpNumberThreeAPart
+                \HarpNumberThreeBPart
                 % Keyboard 1
-                \KeyboardOneNumberThreeAPart
+                \KeyboardOneNumberThreeBPart
                 % Keyboard 2
-                \KeyboardTwoNumberThreeAPart
+                \KeyboardTwoNumberThreeBPart
                 % Keyboard 3
-                \KeyboardThreeNumberThreeAPart
+                \KeyboardThreeNumberThreeBPart
                 % Strings
                 \new StaffGroup <<
                     % Violins 1-2
                     \new GrandStaff \with {
                         systemStartDelimiter = #'SystemStartSquare
                     } <<
-                        \ViolinOneNumberThreeAPart
-                        \ViolinTwoNumberThreeAPart
+                        \ViolinOneNumberThreeBPart
+                        \ViolinTwoNumberThreeBPart
                     >>
-                    \ViolaNumberThreeAPart
-                    \CelloNumberThreeAPart
-                    \BassNumberThreeAPart
+                    \ViolaNumberThreeBPart
+                    \CelloNumberThreeBPart
+                    \BassNumberThreeBPart
                 >>
             >>
         }
