@@ -7,45 +7,23 @@
 \include "3-dear-old-shiz.ily"
 \include "3a-jeweled-shoes.ily"
 \include "3b-let-her-go.ily"
+\include "4-the-wizard-and-i.ily"
 
-KeyboardTwoNumberOnePart = {
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+MakeKeyboardTwoPart = 
+#(define-music-function (rh lh) (ly:music? ly:music?)
+  #{<<
     \new PianoStaff \with { instrumentName = "Keyboard II" shortInstrumentName = "Kbd. II" } <<
-        \new Staff = "rh" << \KeyboardTwoNumberOneRH >>
-        \new Staff = "lh" << \KeyboardTwoNumberOneLH >>
+      \new Staff = "rh" << $rh >>
+      \new Staff = "lh" << $lh >>
     >>
-}
+  >>#})
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-KeyboardTwoNumberTwoPart = {
-    \new PianoStaff \with { instrumentName = "Keyboard II" shortInstrumentName = "Kbd. II" } <<
-        \new Staff = "rh" << \KeyboardTwoNumberTwoRH >>
-        \new Staff = "lh" << \KeyboardTwoNumberTwoLH >>
-    >>
-}
-
-KeyboardTwoNumberTwoAPart = {
-    \new PianoStaff \with { instrumentName = "Keyboard II" shortInstrumentName = "Kbd. II" } <<
-        \new Staff = "rh" << \KeyboardTwoNumberTwoARH >>
-        \new Staff = "lh" << \KeyboardTwoNumberTwoALH >>
-    >>
-}
-
-KeyboardTwoNumberThreePart = {
-    \new PianoStaff \with { instrumentName = "Keyboard II" shortInstrumentName = "Kbd. II" } <<
-        \new Staff = "rh" << \KeyboardTwoNumberThreeRH >>
-        \new Staff = "lh" << \KeyboardTwoNumberThreeLH >>
-    >>
-}
-
-KeyboardTwoNumberThreeAPart = {
-    \new PianoStaff \with { instrumentName = "Keyboard II" shortInstrumentName = "Kbd. II" } <<
-        \new Staff = "rh" << \KeyboardTwoNumberThreeARH >>
-        \new Staff = "lh" << \KeyboardTwoNumberThreeALH >>
-    >>
-}
-
-KeyboardTwoNumberThreeBPart = {
-    \new PianoStaff \with { instrumentName = "Keyboard II" shortInstrumentName = "Kbd. II" } <<
-        \new Staff = "rh" << \KeyboardTwoNumberThreeBRH >>
-        \new Staff = "lh" << \KeyboardTwoNumberThreeBLH >>
-    >>
-}
+KeyboardTwoNumberOnePart = \MakeKeyboardTwoPart \KeyboardTwoNumberOneRH \KeyboardTwoNumberOneLH
+KeyboardTwoNumberTwoPart = \MakeKeyboardTwoPart \KeyboardTwoNumberTwoRH \KeyboardTwoNumberTwoLH
+KeyboardTwoNumberTwoAPart = \MakeKeyboardTwoPart \KeyboardTwoNumberTwoARH \KeyboardTwoNumberTwoALH
+KeyboardTwoNumberThreePart = \MakeKeyboardTwoPart \KeyboardTwoNumberThreeRH \KeyboardTwoNumberThreeLH
+KeyboardTwoNumberThreeAPart = \MakeKeyboardTwoPart \KeyboardTwoNumberThreeARH \KeyboardTwoNumberThreeALH
+KeyboardTwoNumberThreeBPart = \MakeKeyboardTwoPart \KeyboardTwoNumberThreeBRH \KeyboardTwoNumberThreeBLH
+KeyboardTwoNumberFourPart = \MakeKeyboardTwoPart \KeyboardTwoNumberFourRH \KeyboardTwoNumberFourLH

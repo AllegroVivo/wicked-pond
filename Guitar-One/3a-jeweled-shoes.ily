@@ -14,7 +14,7 @@ GuitarOneNumberThreeA = \relative c''' {
     \InstrumentChange \markup \column {
         \line { "Seek-Wah" }
         \line { \italic "(in 16ths)" }
-    } #-0.5 <b e>2.-> \fermata \laissezVibrer \sfz r4 |
+    } <b e>2.-> \fermata \laissezVibrer \sfz r4 |
     R1 * 4 | \bar "|."
 }
 

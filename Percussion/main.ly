@@ -7,45 +7,21 @@
 \include "3-dear-old-shiz.ily"
 \include "3a-jeweled-shoes.ily"
 \include "3b-let-her-go.ily"
+\include "4-the-wizard-and-i.ily"
 
-PercussionNumberOnePart = {
-    <<
-        \new Staff \with { instrumentName = "Percussion" shortInstrumentName = "Perc." }
-        { \PercussionNumberOne }
-    >>
-}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+MakePercussionPart = 
+#(define-music-function (music) (ly:music?)
+  #{<<
+    \new Staff \with { instrumentName = "Percussion" shortInstrumentName = "Perc." }
+        { $music }
+  >>#})
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-PercussionNumberTwoPart = {
-    <<
-        \new Staff \with { instrumentName = "Percussion" shortInstrumentName = "Perc." }
-        { \PercussionNumberTwo }
-    >>
-}
-
-PercussionNumberTwoAPart = {
-    <<
-        \new Staff \with { instrumentName = "Percussion" shortInstrumentName = "Perc." }
-        { \PercussionNumberTwoA }
-    >>
-}
-
-PercussionNumberThreePart = {
-    <<
-        \new Staff \with { instrumentName = "Percussion" shortInstrumentName = "Perc." }
-        { \PercussionNumberThree }
-    >>
-}
-
-PercussionNumberThreeAPart = {
-    <<
-        \new Staff \with { instrumentName = "Percussion" shortInstrumentName = "Perc." }
-        { \PercussionNumberThreeA }
-    >>
-}
-
-PercussionNumberThreeBPart = {
-    <<
-        \new Staff \with { instrumentName = "Percussion" shortInstrumentName = "Perc." }
-        { \PercussionNumberThreeB }
-    >>
-}
+PercussionNumberOnePart = \MakePercussionPart \PercussionNumberOne
+PercussionNumberTwoPart = \MakePercussionPart \PercussionNumberTwo
+PercussionNumberTwoAPart = \MakePercussionPart \PercussionNumberTwo
+PercussionNumberThreePart = \MakePercussionPart \PercussionNumberThree
+PercussionNumberThreeAPart = \MakePercussionPart \PercussionNumberThreeA
+PercussionNumberThreeBPart = \MakePercussionPart \PercussionNumberThreeB
+PercussionNumberFourPart = \MakePercussionPart \PercussionNumberFour

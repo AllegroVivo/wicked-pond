@@ -8,7 +8,7 @@ ReedTwoNumberTwo = \relative c'' {
     \key a \major 
     
     R1 * 10 |
-    \InstrumentChange "Bass Oboe" #-0.75
+    \InstrumentChange #-0.75 "Bass Oboe"
     r4 r8 gs8-. \mf b[( e]) gs,-. a ~ |
     a1 ~ |
     a8 r r gs-. b[( e]) gs,-. a ~ |
@@ -27,10 +27,10 @@ ReedTwoNumberTwo = \relative c'' {
     ds) \> |
     R1^"To Eng. Hn." \! |
     R1 * 8 |
-    r2 \key b \major \InstrumentChange "Eng. Hn." #-0 gs,4( \mf cs) |
+    r2 \key b \major \InstrumentChange #-0 "Eng. Hn." gs,4( \mf cs) |
     r2 e,( |
     ds \< ds') | \bar "||" \key e \major
-    \InstrumentChange "Oboe" #-0.5
+    \InstrumentChange "Oboe"
     cs1( ~ \! |
     \undo \omit TupletBracket
     cs4 ds \tuplet 3/2 { e ds cs) } |
@@ -47,7 +47,7 @@ ReedTwoNumberTwo = \relative c'' {
     R1 * 2^"To Eng. Hn."
     \repeat volta 2 { R1 * 2 | } \key e \major
     \repeat volta 2 { R1 * 2 | } \key d \major \time 3/4
-    \InstrumentChange "Eng. Hn." #-0.5
+    \InstrumentChange "Eng. Hn."
     d2.^( \p |
     f |
     gf |
@@ -92,7 +92,7 @@ ReedTwoNumberTwo = \relative c'' {
     R1 * 8^"To Oboe" |
     R1 \fermata |
     r2 \fermata r \fermata | \bar "||" \key c \major
-    \InstrumentChange "Oboe" #1.5
+    \InstrumentChange #1.5 "Oboe"
     a2-> ~ \ff \startTrillSpan a8 \stopTrillSpan e e[ g]
     b4-. c2.-> \fp |
     r4 b8 a b4. c8 |

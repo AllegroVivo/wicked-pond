@@ -69,7 +69,7 @@ TrumpetOneNumberOne = \relative c'' {
     R1 * 4 | \bar "||"
     R1 * 4 | \bar "||" \key e \major
     R1 * 2 |
-    \InstrumentChange "St. Mute" #-1 r4 gs \p gs8 gs4 gs8 ~ |
+    \InstrumentChange #-1 "St. Mute" r4 gs \p gs8 gs4 gs8 ~ |
     gs fss4 fss8 ~ fss2 |
     R1 * 2 |
     R1 \fermata | \bar "||"

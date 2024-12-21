@@ -7,7 +7,7 @@ ReedTwoNumberThreeA = \relative c'' {
     \NumberThreeASetup \clef treble
     \key b \major 
     
-    \InstrumentChange "Bass Oboe" #-0.5
+    \InstrumentChange "Bass Oboe"
     b8^( \mp as | \bar "||"
     gs4 b cs2 fs,4 cs' | \time 4/4
     b2.) r4 | \time 6/4

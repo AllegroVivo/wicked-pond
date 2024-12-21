@@ -76,7 +76,7 @@ TromboneTwoNumberOne = \relative c {
     R1 \fermata | \bar "||"
     R1 * 4 | \bar "||"
     R1 * 4 | \bar "||" \key d \major
-    \InstrumentChange "St. Mute" #-0.5 r4 as' \p as8 b4 cs8 ~ |
+    \InstrumentChange "St. Mute" r4 as' \p as8 b4 cs8 ~ |
     cs gs4 gs8 ~ gs2 |
     R1^"To Open" |
     R1 * 3 |
@@ -85,6 +85,4 @@ TromboneTwoNumberOne = \relative c {
 
 % \score {
 %     \TromboneTwoNumberOne
-%     \layout {
-%     }
 % }

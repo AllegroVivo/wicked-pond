@@ -19,7 +19,7 @@ VocalsNumberOneTop = \relative c' {
     R1 * 11 |
     R1 \fermata |
     R1 * 4 |
-    r2 \fermata r8 \VocalistName "Glinda:" #0 e e[ cs'] |
+    r2 \fermata r8 \VocalistName #0 "Glinda:" e e[ cs'] |
     \bar "||" \key a \major \time 4/4
     b2 r8 e, e[ cs'] |
     b4 e r8 e, e[ cs'] |
@@ -44,7 +44,7 @@ VocalsNumberOneTop = \relative c' {
     a1 | \bar "||"
     R1 * 4 | \bar "||" \key d \major
     R1 * 6 |
-    r2 \fermata r8 \VocalistName "Glinda:" #0 e, e[ cs'] | \bar "||"
+    r2 \fermata r8 \VocalistName #0 "Glinda:" e, e[ cs'] | \bar "||"
 }
 
 \addlyrics { 

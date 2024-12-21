@@ -7,12 +7,12 @@ HornTwoNumberTwoA = \relative c'' {
     \NumberTwoASetup \clef treble
     \key e \major
     
-    \InstrumentChange "Mute" #-0.5
+    \InstrumentChange "Mute"
     af1 \p |
     R1 * 2 |
     R1 \fermata \caesura |
     R1 \fermata | \bar "||" \key g \major
-    \InstrumentChange "Open" #-0.5
+    \InstrumentChange "Open"
     << { c1-> \fermata } \\ { s4 \f s2 \> s8 s \p } >> |
     c1 \fermata \mp \stopped |
     a ~ \flageolet \p | \time 3/4

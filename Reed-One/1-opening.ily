@@ -7,7 +7,7 @@ ReedOneNumberOne = \relative c''' {
     \NumberOneSetup \clef treble
     \key c \major 
     
-    \grace { s8 } \InstrumentChange "Piccolo" #-0.4
+    \grace { s8 } \InstrumentChange "Piccolo"
     r4 c c8 c4 c8 ~ |
     c c4 c8 ~ c2 |
     r4 c c8 c4 c8 ~ |
@@ -21,7 +21,7 @@ ReedOneNumberOne = \relative c''' {
     \repeat unfold 8 { g16-. cs-. fs,8-. } |
     \repeat unfold 8 { g16-. d'-. fs,8-. } | 
     R1^"To Flute" \fermata | \bar "||" \key b \major
-    \InstrumentChange "Flute" #-0.5
+    \InstrumentChange "Flute"
     \repeat tremolo 8 { fs,16^\(( as) } |
     \repeat unfold 2 {
         \repeat tremolo 8 { fs16( as) } |
@@ -95,6 +95,4 @@ ReedOneNumberOne = \relative c''' {
 
 % \score {
 %     \ReedOneNumberOne
-%     \layout {
-%     }
 % }

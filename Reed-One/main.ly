@@ -7,45 +7,21 @@
 \include "3-dear-old-shiz.ily"
 \include "3a-jeweled-shoes.ily"
 \include "3b-let-her-go.ily"
+\include "4-the-wizard-and-i.ily"
 
-ReedOneNumberOnePart = {
-    << 
-        \new Staff \with { instrumentName = "Reed I" shortInstrumentName = "Rd. I" }
-        { \ReedOneNumberOne }
-    >>
-}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+MakeReedOnePart = 
+#(define-music-function (music) (ly:music?)
+  #{<<
+    \new Staff \with { instrumentName = "Reed I" shortInstrumentName = "Rd. I" }
+        { $music }
+  >>#})
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-ReedOneNumberTwoPart = {
-    <<
-        \new Staff \with { instrumentName = "Reed I" shortInstrumentName = "Rd. I" }
-        { \ReedOneNumberTwo }
-    >>
-}
-
-ReedOneNumberTwoAPart = {
-    <<
-        \new Staff \with { instrumentName = "Reed I" shortInstrumentName = "Rd. I" }
-        { \ReedOneNumberTwoA }
-    >>
-}
-
-ReedOneNumberThreePart = {
-    <<
-        \new Staff \with { instrumentName = "Reed I" shortInstrumentName = "Rd. I" }
-        { \ReedOneNumberThree }
-    >>
-}
-
-ReedOneNumberThreeAPart = {
-    <<
-        \new Staff \with { instrumentName = "Reed I" shortInstrumentName = "Rd. I" }
-        { \ReedOneNumberThreeA }
-    >>
-}
-
-ReedOneNumberThreeBPart = {
-    <<
-        \new Staff \with { instrumentName = "Reed I" shortInstrumentName = "Rd. I" }
-        { \ReedOneNumberThreeB }
-    >>
-}
+ReedOneNumberOnePart = \MakeReedOnePart \ReedOneNumberOne
+ReedOneNumberTwoPart = \MakeReedOnePart \ReedOneNumberTwo
+ReedOneNumberTwoAPart = \MakeReedOnePart \ReedOneNumberTwo
+ReedOneNumberThreePart = \MakeReedOnePart \ReedOneNumberThree
+ReedOneNumberThreeAPart = \MakeReedOnePart \ReedOneNumberThreeA
+ReedOneNumberThreeBPart = \MakeReedOnePart \ReedOneNumberThreeB
+ReedOneNumberFourPart = \MakeReedOnePart \ReedOneNumberFour

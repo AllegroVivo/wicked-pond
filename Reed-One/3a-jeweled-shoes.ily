@@ -8,7 +8,7 @@ ReedOneNumberThreeA = \relative c' {
     \key e \major 
     
     r4 |
-    \InstrumentChange "Alto Flute" #-0.5
+    \InstrumentChange "Alto Flute"
     ds1^( \p b4 bs | \time 4/4
     cs2.) r4 | \time 6/4
     e'2( \pp cs b | \time 4/4

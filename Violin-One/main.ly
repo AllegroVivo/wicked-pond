@@ -7,45 +7,21 @@
 \include "3-dear-old-shiz.ily"
 \include "3a-jeweled-shoes.ily"
 \include "3b-let-her-go.ily"
+\include "4-the-wizard-and-i.ily"
 
-ViolinOneNumberOnePart = {
-    <<
-        \new Staff \with { instrumentName = "Violin I" shortInstrumentName = "Vln. I" }
-        { \ViolinOneNumberOne }
-    >>
-}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+MakeViolinOnePart = 
+#(define-music-function (music) (ly:music?)
+  #{<<
+    \new Staff \with { instrumentName = "Violin I" shortInstrumentName = "Vln. I" }
+        { $music }
+  >>#})
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-ViolinOneNumberTwoPart = {
-    <<
-        \new Staff \with { instrumentName = "Violin I" shortInstrumentName = "Vln. I" }
-        { \ViolinOneNumberTwo }
-    >>
-}
-
-ViolinOneNumberTwoAPart = {
-    <<
-        \new Staff \with { instrumentName = "Violin I" shortInstrumentName = "Vln. I" }
-        { \ViolinOneNumberTwoA }
-    >>
-}
-
-ViolinOneNumberThreePart = {
-    <<
-        \new Staff \with { instrumentName = "Violin I" shortInstrumentName = "Vln. I" }
-        { \ViolinOneNumberThree }
-    >>
-}
-
-ViolinOneNumberThreeAPart = {
-    <<
-        \new Staff \with { instrumentName = "Violin I" shortInstrumentName = "Vln. I" }
-        { \ViolinOneNumberThreeA }
-    >>
-}
-
-ViolinOneNumberThreeBPart = {
-    <<
-        \new Staff \with { instrumentName = "Violin I" shortInstrumentName = "Vln. I" }
-        { \ViolinOneNumberThreeB }
-    >>
-}
+ViolinOneNumberOnePart = \MakeViolinOnePart \ViolinOneNumberOne
+ViolinOneNumberTwoPart = \MakeViolinOnePart \ViolinOneNumberTwo
+ViolinOneNumberTwoAPart = \MakeViolinOnePart \ViolinOneNumberTwo
+ViolinOneNumberThreePart = \MakeViolinOnePart \ViolinOneNumberThree
+ViolinOneNumberThreeAPart = \MakeViolinOnePart \ViolinOneNumberThreeA
+ViolinOneNumberThreeBPart = \MakeViolinOnePart \ViolinOneNumberThreeB
+ViolinOneNumberFourPart = \MakeViolinOnePart \ViolinOneNumberFour

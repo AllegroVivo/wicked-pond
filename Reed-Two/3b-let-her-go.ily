@@ -8,7 +8,7 @@ ReedTwoNumberThreeB = \relative c' {
     \key e \major 
     
     R2. * 2 |
-    \InstrumentChange "Bass Oboe" #-0.5
+    \InstrumentChange "Bass Oboe"
     e4.( e' ~ |
     \once \override TupletNumber.text = "2"
     \tuplet 4/3 { e4 ds } bs4. ~ |

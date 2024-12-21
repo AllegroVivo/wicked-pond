@@ -9,7 +9,7 @@ GuitarOneNumberTwo = \relative c' {
     \override Glissando.style = #'normal
     
     R1 |
-    r4 \InstrumentChange "Steel Acoustic" #-0.5 r8 e \p a e' e,4 |
+    r4 \InstrumentChange "Steel Acoustic" r8 e \p a e' e,4 |
     \repeat unfold 3 { 
         R1 |
         r4 r8 e a e' e,4 |
@@ -62,7 +62,7 @@ GuitarOneNumberTwo = \relative c' {
     \repeat volta 2 { R1 * 2 | } \key g \major \time 3/4
     R2. * 4 | \bar ".|:-||"
     \repeat volta 2 {
-        \InstrumentChange "Nylon Acoustic" -0.5
+        \InstrumentChange "Nylon Acoustic"
         fs4 g,2 | e'2. |
     }
     fs4 d fs, |
@@ -85,7 +85,7 @@ GuitarOneNumberTwo = \relative c' {
     <fs' b>2. | \bar "||" \time 4/4
     R1 * 4^"To Banjo" | \bar ".|:-||"
     \repeat volta 2 { R1 * 4 | }
-    \InstrumentChange "Banjo" #-0.5
+    \InstrumentChange "Banjo"
     fs4-. d-. bf-. fs'-. |
     a,-. fs'-. bf,-. r |
     fs' d8. bf16 r8. fs'16:64 ~ fs8.:32 b,16 ~ |
@@ -109,7 +109,7 @@ GuitarOneNumberTwo = \relative c' {
     R1 * 8 |
     R1 \fermata |
     r2 \fermata r \fermata | \bar "||" \key c \major
-    \InstrumentChange "Electric" #-0.5
+    \InstrumentChange "Electric"
     <a,, e' a>1-> |
     r2 <c f c'>4^^ <d a' d>^^ |
     <a e' a>1-> |

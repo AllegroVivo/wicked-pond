@@ -7,7 +7,7 @@ ReedTwoNumberTwoA = \relative c'' {
     \NumberTwoASetup \clef treble
     \key df \major 
     
-    r2 \InstrumentChange "English Horn" #-0.5 f( ~ |
+    r2 \InstrumentChange "English Horn" f( ~ |
     f ef |
     f1) |
     bf2( af) \fermata \caesura |

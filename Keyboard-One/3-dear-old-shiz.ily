@@ -10,7 +10,7 @@ KeyboardOneNumberThreeRH = \relative c'' {
     <<
         {
             \new CueVoice { gs8^( as) }
-            \bar "||" \InstrumentChange "Piano/Pipe Organ" #-0.5
+            \bar "||" \InstrumentChange "Piano/Pipe Organ"
             b2 as4 fs8( gs) |
             as4 b gs fs8( e) |
             ds4 fs8 b ds4 cs ~ |

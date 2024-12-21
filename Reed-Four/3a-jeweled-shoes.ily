@@ -8,7 +8,7 @@ ReedFourNumberThreeA = \relative c'' {
     \key df \major
     
     r4 |
-    \InstrumentChange "Bs. Clarinet" #-0.5
+    \InstrumentChange "Bs. Clarinet" 
     gf4^( \p f ef2 c4 a | \time 4/4
     bf2.) r4 | \time 6/4
     R1. | \time 4/4

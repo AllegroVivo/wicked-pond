@@ -77,7 +77,8 @@ TrumpetTwoNumberOne = \relative c'' {
     R1 * 4 | \bar "||"
     R1 * 4 | \bar "||" \key e \major
     R1 * 2 |
-    \InstrumentChange "St. Mute" #-1 r4 bs \p bs8 cs4 ds8 ~ |
+    \InstrumentChange #-1 "St. Mute"
+    r4 bs \p bs8 cs4 ds8 ~ |
     ds as4 as8 ~ as2 |
     r4 b! b8 as4 gs8 ~ |
     gs2 r |
@@ -86,6 +87,4 @@ TrumpetTwoNumberOne = \relative c'' {
 
 % \score {
 %     \TrumpetTwoNumberOne
-%     \layout {
-%     }
 % }

@@ -8,7 +8,7 @@ VocalsNumberTwoTop = \relative c' {
     \key a \major 
     
     R1 * 24 |
-    r4 \VocalistName "Glinda:" #-0.5 e ds ds' | \key e \major
+    r4 \VocalistName "Glinda:" e ds ds' | \key e \major
     cs2. r8 cs |
     cs ds ~ ds4 cs b8 cs ~ |
     cs4 b2. ~ |
@@ -41,7 +41,7 @@ VocalsNumberTwoTop = \relative c' {
     R1 \fermata |
     r2 \fermata r \fermata | \key c \major
     R1 * 8 | \key g \major
-    \VocalistName "Glinda:" #-0.5
+    \VocalistName "Glinda:"
     g'2 g |
     a1 |
     R1 * 2 |
@@ -85,15 +85,15 @@ VocalsNumberTwoMid = \relative c'' {
     \key a \major 
     
     R1 * 12 |
-    \VocalistName "Woman:" #-1
+    \VocalistName #-1 "Woman:"
     r4 gs8 fs gs4. a8 |
     b4 cs fs,2 |
-    \VocalistName "All:" #-1
+    \VocalistName #-1 "All:"
     r4 b8 a b4. a8 |
     b fs4. fs4 a |
     gs1 |
     R1 * 2 |
-    \VocalistName "Women:" #-1
+    \VocalistName #-1 "Women:"
     r4 gs8 fs gs4 a8 b ~ |
     b cs4 fs,8 ~ fs2 |
     r4 b8 a b4 r8 b ~ |
@@ -101,7 +101,7 @@ VocalsNumberTwoMid = \relative c'' {
     <fs b>1 |
     R1 | \bar "||" \key e \major
     R1 * 12 |
-    r2 \VocalistName "Women:" #0.2 e |
+    r2 \VocalistName #0.2 "Women:" e |
     ds <b' ds> | \bar "||"
     <a cs>2. r8 q |
     q <a ds>4 <a cs e>8 ~ q4 <cs ds>8 cs ~ |
@@ -127,7 +127,7 @@ VocalsNumberTwoMid = \relative c'' {
     \repeat volta 2 { R1 * 4 | }
     R1 * 17 |
     R1 \fermata | \bar "||" \key a \major
-    r2 r4 \VocalistName "Midwife:" #-0.5 r8 \xNotesOn e |
+    r2 r4 \VocalistName "Midwife:" r8 \xNotesOn e |
     e e r4 r2 |
     r8 e e[ e] b' e, r4 |
     r2 r8 \xNotesOff e e cs' |
@@ -137,7 +137,7 @@ VocalsNumberTwoMid = \relative c'' {
     b a cs d \caesura |
     gs2 \harmonic r | \bar "||" \key e \major
     R1 |
-    \VocalistName "(Midwife)" #-0.75
+    \VocalistName  #-0.75 "(Midwife)"
     r8 gs,, cs[ e] fs4 r |
     R1 |
     r4 cs8 e fs b, r4 |
@@ -146,9 +146,9 @@ VocalsNumberTwoMid = \relative c'' {
     fs fs e e a a r gs |
     fs fs e e a a gs gs |
     R1 \fermata | 
-    \VocalistName "All:" #-0.5
+    \VocalistName "All:"
     <cs f a>1 \fermata \caesura | \bar "||" \key c \major
-    r4 \VocalistName "Women:" #-0.3 <b e>8 <a d> <b e>4. <g c>8 |
+    r4 \VocalistName #-0.3 "Women:" <b e>8 <a d> <b e>4. <g c>8 |
     <b e>4 <c f>2. |
     r4 <b e>8 <a d> <b e>4. <c e>8 |
     <b d>4 <c e> <a c e>2 |
@@ -225,15 +225,15 @@ VocalsNumberTwoBottom = \relative c'' {
     \key a \major 
     
     R1 * 10 |
-    \VocalistName "Man:" #-1
+    \VocalistName #-1 "Man:"
     r4 gs8 fs gs4. e8 |
     gs fs4. ~ fs4 r |
     R1 * 2 |
-    \VocalistName "All:" #-1
+    \VocalistName #-1 "All:"
     r4 b,8 a b4. a8 |
     b fs4. fs4 a |
     gs1 |
-    \VocalistName "Men:" #-1
+    \VocalistName #-1 "Men:"
     r8 <a, a'> <gs' gs'>[ <fs fs'>] <gs gs'>4. <e e'>8 |
     <gs gs'> <fs fs'>4. ~ q2 |
     R1 * 2 |
@@ -242,7 +242,7 @@ VocalsNumberTwoBottom = \relative c'' {
     <b ds>1 |
     R1 | \key e \major
     R1 * 12 |
-    \VocalistName "Men:" #-1
+    \VocalistName #-1 "Men:"
     r2 e, |
     ds <ds' fs>
     <cs e>2. r8 q |
@@ -264,7 +264,7 @@ VocalsNumberTwoBottom = \relative c'' {
     R2. * 4 |
     \repeat volta 2 { R2. * 2 | } 
     R2. |
-    r4 \VocalistName "Frex:" #-1 d8[ ds] e es |
+    r4 \VocalistName #-1 "Frex:" d8[ ds] e es |
     fs2 ~ fs8 es |
     fs2 es4 |
     fs2 b4 |
@@ -285,7 +285,7 @@ VocalsNumberTwoBottom = \relative c'' {
     g ~ |
     g2. r4 |
     R1 |
-    \repeat volta 2 { R1 * 3 | \VocalistName "Salesman:" #-1 r2 d,8. ds16 e8. es16 | }
+    \repeat volta 2 { R1 * 3 | \VocalistName #-1 "Salesman:" r2 d,8. ds16 e8. es16 | }
     fs4 r8. es16 fs8 es4 fs8 ~ |
     fs8. b16 ~ b4 d,8. ds16 e8. es16 |
     fs!4 es fs8. b16 ~ b8. e,16 ~ |
@@ -302,7 +302,7 @@ VocalsNumberTwoBottom = \relative c'' {
     R1 * 5 |
     R1 \fermata | \key a \major
     R1 |
-    r2 \VocalistName "Frex:" #0 \xNote b4 r4 |
+    r2 \VocalistName #0 "Frex:" \xNote b4 r4 |
     R1 |
     r4 \xNote { e,4 b'8 } r r4 |
     r2 r8 e, e cs' |
@@ -311,7 +311,7 @@ VocalsNumberTwoBottom = \relative c'' {
     d' cs e fs |
     R1 \fermata | \key e \major
     R1 |
-    r2 \VocalistName "(Frex)" #-0.5 r8 fs, b[ ds] |
+    r2 \VocalistName "(Frex)" r8 fs, b[ ds] |
     e2 r |
     r r4 b8 fs' |
     gs2 r |
@@ -319,7 +319,7 @@ VocalsNumberTwoBottom = \relative c'' {
     fs fs e e a a r gs |
     ds' ds cs cs fs fs e e |
     R1 \fermata |
-    \VocalistName "All:" #-0.5
+    \VocalistName "All:"
     <c f a>1 \fermata | \key c \major
     r4 <e a>8 <d g> <e a>4. <c e>8 |
     <e g>4 <f a>2. |

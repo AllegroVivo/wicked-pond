@@ -14,7 +14,7 @@ TrumpetTwoNumberThreeA = \relative c'' {
     \InstrumentChange \markup \column {
         \line { "Harmon Mute" }
         \line { \italic "(stem fully extended)" }
-    } #-0.5 df2.-> \fermata \sfzp r4 |
+    } df2.-> \fermata \sfzp r4 |
     R1 * 4 | \bar "|."
 }
 

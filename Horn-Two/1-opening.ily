@@ -95,6 +95,4 @@ HornTwoNumberOne = \relative c'' {
 
 % \score {
 %     \HornTwoNumberOne
-%     \layout {
-%     }
 % }

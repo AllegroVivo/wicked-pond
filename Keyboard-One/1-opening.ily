@@ -12,7 +12,7 @@ KeyboardOneNumberOneRH = \relative c'''' {
     <<
         {
             \override Stem.details.beamed-lengths = #'(5)
-            \ottava #1 r16 \InstrumentChange "Piano/Xylo." #-0.25 b-.[ r g-.] 
+            \ottava #1 r16 \InstrumentChange #-0.25 "Piano/Xylo." b-.[ r g-.] 
             \improvisationOn \hide Stem b,4 b b |
             b b b b \improvisationOff | \undo \hide Stem
             r16 c'-.[ r g-.] 
@@ -40,7 +40,7 @@ KeyboardOneNumberOneRH = \relative c'''' {
     >> \ottava #0
     R1 \fermata | \bar "||" \key b \major \break
     << 
-        { ds,4 \arpeggio \InstrumentChange "Piano" #0.5 \f fs-. fs-. fs-. } 
+        { ds,4 \arpeggio \InstrumentChange "Piano" \f fs-. fs-. fs-. } 
         \\ 
         { <ds, fs as>1 \laissezVibrer \arpeggio }
     >>
@@ -77,11 +77,11 @@ KeyboardOneNumberOneRH = \relative c'''' {
     \repeat tremolo 16 { <fs a!>32( <d! b'>) | }
     \repeat unfold 2 { \repeat tremolo 16 { <fs a>32( <d b'>) | } }
     \repeat tremolo 16 { <fs a>32( \> <d b'>) | } \break
-    <d fs a>1:32 ~ \InstrumentChange "Trem. Strings" #0.75 \mp |
+    <d fs a>1:32 ~ \InstrumentChange #0.75 "Trem. Strings" \mp |
     \repeat unfold 4 { q:32 ~ | }
     q:32 | \ottava #0
     R1 * 2 | \break
-    r2 \InstrumentChange "Piano" #0.5 <e, gs b> ~ \arpeggio |
+    r2 \InstrumentChange "Piano" <e, gs b> ~ \arpeggio |
     q <fs as cs> \arpeggio |
     <e gs b>1 \arpeggio |
     <fs as cs> \arpeggio |
@@ -113,7 +113,7 @@ KeyboardOneNumberOneLH = \relative c, {
     
     \grace { s8 } <<
         { 
-            <a' a'>1 ~ \InstrumentChange "Piano" #-0.5 | 
+            <a' a'>1 ~ \InstrumentChange "Piano" | 
             q2. <e' e'>4 | 
             <a, a'>1 ~ | 
             q2.  <e' e'>4 |
@@ -170,7 +170,7 @@ KeyboardOneNumberOneLH = \relative c, {
     <c c'>1-> | 
     q2. r4 | 
     R1 | 
-    r2 \tweak NoteHead.style #'xcircle b''4^^ \sfz \InstrumentChange "Cluster" #0.5 r | \break
+    r2 \tweak NoteHead.style #'xcircle b''4^^ \sfz \InstrumentChange "Cluster" r | \break
     R1 |
     r2 r4 \ottava #-1 <a,, a'>-> \ottava #0 |
     R1 |

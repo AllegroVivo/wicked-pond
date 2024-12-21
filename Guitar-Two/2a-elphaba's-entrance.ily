@@ -12,7 +12,7 @@ GuitarTwoNumberTwoA = \relative c' {
     R1 \fermata | \bar "||" \key c \major
     R1 * 3 | \time 3/4
     \repeat volta 2 { R2. } | \key b \major \time 4/4
-    \InstrumentChange "Steel Acoustic" #-0.5
+    \InstrumentChange "Steel Acoustic"
     e'2-> \mf \laissezVibrer r \fermata |
     as,-> r \fermata | \bar "||"
     << { gs2 gs } \\ { ds4 es gs2 } >>

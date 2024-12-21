@@ -11,10 +11,10 @@ PercussionNumberThreeA = \relative c'' {
     R1. | \time 4/4
     R1 | \time 6/4
     R1. | \time 4/4
-    \InstrumentChange "Crotale" #-0.5
+    \InstrumentChange "Crotale"
     ds2. \fermata \laissezVibrer \sfz r4 |
     R1 |
-    r2 \InstrumentChange "Chime" #-0.5 b \p |
+    r2 \InstrumentChange "Chime" b \p |
     R1 * 2 | \bar "|."
 }
 

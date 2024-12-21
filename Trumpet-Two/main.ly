@@ -7,45 +7,21 @@
 \include "3-dear-old-shiz.ily"
 \include "3a-jeweled-shoes.ily"
 \include "3b-let-her-go.ily"
+\include "4-the-wizard-and-i.ily"
 
-TrumpetTwoNumberOnePart = {
-    <<
-        \new Staff \with { instrumentName = "Trumpet II" shortInstrumentName = "Tpt. II" }
-        { \TrumpetTwoNumberOne }
-    >>
-}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+MakeTrumpetTwoPart = 
+#(define-music-function (music) (ly:music?)
+  #{<<
+    \new Staff \with { instrumentName = "Trumpet II" shortInstrumentName = "Tpt. II" }
+        { $music }
+  >>#})
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-TrumpetTwoNumberTwoPart = {
-    <<
-        \new Staff \with { instrumentName = "Trumpet II" shortInstrumentName = "Tpt. II" }
-        { \TrumpetTwoNumberTwo }
-    >>
-}
-
-TrumpetTwoNumberTwoAPart = {
-    <<
-        \new Staff \with { instrumentName = "Trumpet II" shortInstrumentName = "Tpt. II" }
-        { \TrumpetTwoNumberTwoA }
-    >>
-}
-
-TrumpetTwoNumberThreePart = {
-    <<
-        \new Staff \with { instrumentName = "Trumpet II" shortInstrumentName = "Tpt. II" }
-        { \TrumpetTwoNumberThree }
-    >>
-}
-
-TrumpetTwoNumberThreeAPart = {
-    <<
-        \new Staff \with { instrumentName = "Trumpet II" shortInstrumentName = "Tpt. II" }
-        { \TrumpetTwoNumberThreeA }
-    >>
-}
-
-TrumpetTwoNumberThreeBPart = {
-    <<
-        \new Staff \with { instrumentName = "Trumpet II" shortInstrumentName = "Tpt. II" }
-        { \TrumpetTwoNumberThreeB }
-    >>
-}
+TrumpetTwoNumberOnePart = \MakeTrumpetTwoPart \TrumpetTwoNumberOne
+TrumpetTwoNumberTwoPart = \MakeTrumpetTwoPart \TrumpetTwoNumberTwo
+TrumpetTwoNumberTwoAPart = \MakeTrumpetTwoPart \TrumpetTwoNumberTwo
+TrumpetTwoNumberThreePart = \MakeTrumpetTwoPart \TrumpetTwoNumberThree
+TrumpetTwoNumberThreeAPart = \MakeTrumpetTwoPart \TrumpetTwoNumberThreeA
+TrumpetTwoNumberThreeBPart = \MakeTrumpetTwoPart \TrumpetTwoNumberThreeB
+TrumpetTwoNumberFourPart = \MakeTrumpetTwoPart \TrumpetTwoNumberFour

@@ -8,12 +8,12 @@ KeyboardThreeNumberTwoRH = \relative c'' {
     \key a \major 
     
     R1 * 11 |
-    \InstrumentChange "Airy Bell" #-0.5
+    \InstrumentChange "Airy Bell"
     r4 r8 e-. fs-. b-. fs-. gs-. |
     R1 * 3 |
     <d b'>2 <b fs'> |
     R1 * 8 |
-    \InstrumentChange "Violin Section" #-1
+    \InstrumentChange #-1 "Violin Section"
     r4 e,( \p ds <b' ds>) | \bar "||" \key e \major
     <a cs>1 |
     cs4( ds cs b) |
@@ -49,7 +49,7 @@ KeyboardThreeNumberTwoRH = \relative c'' {
     \repeat volta 2 { R2. * 2 | }
     R2. * 2 | \bar "||"
     R2. * 2 | 
-    \InstrumentChange "Zither" #-0.7
+    \InstrumentChange #-0.7 "Zither"
     r8 d'16 \mp b fs4 b |
     d2 r4 |
     R2. * 2 |
@@ -64,7 +64,7 @@ KeyboardThreeNumberTwoRH = \relative c'' {
     R1 * 17 |
     R1 \fermata | \bar "||" \key a \major
     R1 |
-    r2 \InstrumentChange "Vibes & Marimba" #-0.7 r8 e \f e[ cs'] |
+    r2 \InstrumentChange #-0.7 "Vibes & Marimba" r8 e \f e[ cs'] |
     <d, e a b>2 r8 e e[ cs'] |
     <d, e a b>4-. <a' b d e>->-. r2 |
     <d, e a b>4 r q r |
@@ -78,7 +78,7 @@ KeyboardThreeNumberTwoRH = \relative c'' {
             q <ds e>4 q8 ~ q2 |
             s4 <cs e> q8 q4 q8 ~ |
             q <ds e>4 q8 ~ q2 |
-            \InstrumentChange "Strings" #-0.8 gs,1:32 |
+            \InstrumentChange #-0.8 "Strings" gs,1:32 |
             e2:32 c:32 |
         }
         \\
@@ -139,7 +139,7 @@ KeyboardThreeNumberTwoLH = \relative c {
     \key a \major 
     
     R1 * 10 |
-    \InstrumentChange "Cello Section" #0
+    \InstrumentChange #0 "Cello Section"
     fs,1:32-> \fp |
     d:32-> \fp |
     fs:32-> \sim |
@@ -191,7 +191,7 @@ KeyboardThreeNumberTwoLH = \relative c {
     R1 * 4 |
     \repeat volta 2 { R1 * 4 | }
     R1 * 2 |
-    r2 \InstrumentChange "Slightly-woozy Tuba" #-0.5 r4 r8. g,16 ~ \mf |
+    r2 \InstrumentChange "Slightly-woozy Tuba" r4 r8. g,16 ~ \mf |
     g4 r8. c,16 ~ c2 |
     g'4-. r d-. r |
     b'-. r e,-. r |

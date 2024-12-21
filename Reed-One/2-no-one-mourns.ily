@@ -8,7 +8,7 @@ ReedOneNumberTwo = \relative c''' {
     \key a \major 
     
     R1 * 10 |
-    r4 \InstrumentChange "Flute" #-0.5 gs8-. \mf fs-. gs4.( e8 |
+    r4 \InstrumentChange "Flute" gs8-. \mf fs-. gs4.( e8 |
     gs8-.) r fs2. ~ |
     fs8 r gs-. fs-. gs4. a8 |
     b4 cs fs,2 |
@@ -71,7 +71,7 @@ ReedOneNumberTwo = \relative c''' {
     r \acciaccatura { d'8( } e4->-.) r2 |
     R1^"To Piccolo" |
     R1 * 2 |
-    \InstrumentChange "Piccolo" #-0.5
+    \InstrumentChange "Piccolo"
     fs,2 \f cs \< \glissando |
     cs'1 \startTrillSpan \fermata \sfz | \bar "||" \key e \major
     r4 \stopTrillSpan e \f e8 e4 e8 ~ |
@@ -81,7 +81,7 @@ ReedOneNumberTwo = \relative c''' {
     R1 * 4^"To Flute" |
     R1 \fermata |
     r2 \fermata r \fermata | \bar "||" \key c \major
-    \InstrumentChange "Flute" #1.5
+    \InstrumentChange #1.5 "Flute"
     e2-> ~ \startTrillSpan \ff e8[ \stopTrillSpan b] e, g |
     b4 c2.-> \fp |
     r4 b8 a b4. c8 |

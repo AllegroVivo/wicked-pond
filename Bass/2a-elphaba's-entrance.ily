@@ -12,7 +12,7 @@ BassNumberTwoA = \relative c {
     R1 \fermata | \bar "||" \key c \major
     R1 \fermata |
     R1 \fermata |
-    \InstrumentChange "Acoustsic" #-0.5
+    \InstrumentChange "Acoustsic"
     af1 \mf \> | \time 3/4
     \repeat volta 2 { R2. \! } | \key b \major \time 4/4
     R1 \fermata |

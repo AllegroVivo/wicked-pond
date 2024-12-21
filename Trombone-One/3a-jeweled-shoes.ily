@@ -14,7 +14,7 @@ TromboneOneNumberThreeA = \relative c' {
     \InstrumentChange \markup \column {
         \line { "Harmon Mute" }
         \line { \italic "(stem fully extended)" }
-    } #-0.5 e2.-> \fermata \sfzp r4 |
+    } e2.-> \fermata \sfzp r4 |
     R1 * 4 | \bar "|."
 }
 

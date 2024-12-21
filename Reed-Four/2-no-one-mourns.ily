@@ -7,7 +7,7 @@ ReedFourNumberTwo = \relative c {
     \NumberTwoSetup \clef bass
     \key a \major
     
-    r4 \InstrumentChange "Bassoon" #-0.75
+    r4 \InstrumentChange #-0.75 "Bassoon"
     r8 ds8( \p e b' ds, e ~ |
     e2.) r4 |
     \repeat unfold 2 { r r8 ds8( e b' ds, e ~ | e2.) r4 | }
@@ -15,7 +15,7 @@ ReedFourNumberTwo = \relative c {
     e4. e8( a) e'-. e,4 \! |
     r r8 ds( \mp fs b ds, e ~ |
     e4) \< r8 e-.^( a-. e'-. e,-. fs'-.) | \clef treble
-    \InstrumentChange "Flute" #-0.5
+    \InstrumentChange "Flute"
     r4 \! cs'8-. \mf b-. cs4.( a8 |
     cs8-.) r r e,-. fs( b) fs-. gs ~ |
     gs r cs-. b-. cs4. cs8 |
@@ -41,7 +41,7 @@ ReedFourNumberTwo = \relative c {
     a,1^( |
     gs2 fs) |
     R1 * 2 | \clef bass \bar "||"
-    r2 r4 \InstrumentChange "Bassoon" #-0.5 e,,8-> \f a-> ~ |
+    r2 r4 \InstrumentChange "Bassoon" e,,8-> \f a-> ~ |
     a4. r8 r4 ds,8-> gs-> ~ |
     gs4. r8 gs gs cs,4-> ~ |
     cs2 r4 cs |
@@ -57,7 +57,7 @@ ReedFourNumberTwo = \relative c {
     R1^"To Bass Clar."
     \repeat volta 2 { R1 * 2 | } \key e \major
     \repeat volta 2 { R1 * 2 | } \clef treble \key a \major \time 3/4
-    \InstrumentChange "Bass Clarinet" #-0.5
+    \InstrumentChange "Bass Clarinet"
     r4 e( gs) |
     r a,( fs') |
     a,-. r r |

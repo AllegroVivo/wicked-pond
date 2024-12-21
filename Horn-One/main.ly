@@ -7,45 +7,21 @@
 \include "3-dear-old-shiz.ily"
 \include "3a-jeweled-shoes.ily"
 \include "3b-let-her-go.ily"
+\include "4-the-wizard-and-i.ily"
 
-HornOneNumberOnePart = {
-    <<
-        \new Staff \with { instrumentName = "Horn I" shortInstrumentName = "Hn. I" }
-        { \HornOneNumberOne }
-    >>
-}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+MakeHornOnePart = 
+#(define-music-function (music) (ly:music?)
+  #{<<
+    \new Staff \with { instrumentName = "Horn I" shortInstrumentName = "Hn. I" }
+        { $music }
+  >>#})
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-HornOneNumberTwoPart = {
-    <<
-        \new Staff \with { instrumentName = "Horn I" shortInstrumentName = "Hn. I" }
-        { \HornOneNumberTwo }
-    >>
-}
-
-HornOneNumberTwoAPart = {
-    <<
-        \new Staff \with { instrumentName = "Horn I" shortInstrumentName = "Hn. I" }
-        { \HornOneNumberTwoA }
-    >>
-}
-
-HornOneNumberThreePart = {
-    <<
-        \new Staff \with { instrumentName = "Horn I" shortInstrumentName = "Hn. I" }
-        { \HornOneNumberThree }
-    >>
-}
-
-HornOneNumberThreeAPart = {
-    <<
-        \new Staff \with { instrumentName = "Horn I" shortInstrumentName = "Hn. I" }
-        { \HornOneNumberThreeA }
-    >>
-}
-
-HornOneNumberThreeBPart = {
-    <<
-        \new Staff \with { instrumentName = "Horn I" shortInstrumentName = "Hn. I" }
-        { \HornOneNumberThreeB }
-    >>
-}
+HornOneNumberOnePart = \MakeHornOnePart \HornOneNumberOne
+HornOneNumberTwoPart = \MakeHornOnePart \HornOneNumberTwo
+HornOneNumberTwoAPart = \MakeHornOnePart \HornOneNumberTwo
+HornOneNumberThreePart = \MakeHornOnePart \HornOneNumberThree
+HornOneNumberThreeAPart = \MakeHornOnePart \HornOneNumberThreeA
+HornOneNumberThreeBPart = \MakeHornOnePart \HornOneNumberThreeB
+HornOneNumberFourPart = \MakeHornOnePart \HornOneNumberFour

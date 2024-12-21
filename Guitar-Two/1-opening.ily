@@ -8,7 +8,7 @@ GuitarTwoNumberOne = \relative c' {
     \key c \major 
     \override Glissando.style = #'normal
     
-    \grace { s8 } \InstrumentChange "Electric" #-0.6
+    \grace { s8 } \InstrumentChange #-0.6 "Electric"
     a1-> ~ \ff |
     a2. e4 \ten |
     a1-> ~ |
@@ -60,6 +60,4 @@ GuitarTwoNumberOne = \relative c' {
 
 % \score {
 %     \GuitarTwoNumberOne
-%     \layout {
-%     }
 % }

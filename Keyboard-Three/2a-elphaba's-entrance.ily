@@ -7,7 +7,7 @@ KeyboardThreeNumberTwoARH = \relative c'' {
     \NumberTwoASetup \clef treble
     \key gf \major 
     
-    r2 \InstrumentChange "Muted Stgs." #-0.5 
+    r2 \InstrumentChange "Muted Stgs."
     \repeat tremolo 8 { <bf df>32( gf) } |
     \repeat tremolo 8 { <bf df>32( gf) } \repeat tremolo 8 { <af c>32( ef) } |
     \repeat tremolo 16 { <bf' df>32( gf) } |
@@ -18,7 +18,7 @@ KeyboardThreeNumberTwoARH = \relative c'' {
     \InstrumentChange \markup \column {
         \line { "Trem. Strings" }
         \line { "(Not muted)" }
-    } #-0.5 <d gf bf>2:32-> \mf <bf d gf>:32-> | \time 3/4
+    } <d gf bf>2:32-> \mf <bf d gf>:32-> | \time 3/4
     \repeat volta 2 { <gf bf d>2.:32 \> } \key b \major \time 4/4
     R1 \fermata \! |
     R1 \fermata | \bar "||"

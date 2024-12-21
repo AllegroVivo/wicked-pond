@@ -7,7 +7,7 @@ ReedFourNumberOne = \relative c' {
     \NumberOneSetup \clef treble
     \key a \major
     
-    \grace { s8 } \InstrumentChange "Bari Sax." #-0.4 fs1-> ~ \sfzf  |
+    \grace { s8 } \InstrumentChange #-0.4 "Bari Sax." fs1-> ~ \sfzf  |
     fs2 ~ fs8 r cs'4 \ten |
     fs,1-> ~ \sfzf |
     fs2 ~ fs8 r cs'4 \ten |
@@ -34,7 +34,7 @@ ReedFourNumberOne = \relative c' {
     bf-> ff-> |
     ef8-. r r4^"To Bassoon" r2 |
     R1 | \clef bass \bar "||" \key c \major \time 2/2
-    r4 e2 \f \InstrumentChange "Bassoon" #0.5 e4 |
+    r4 e2 \f \InstrumentChange "Bassoon" e4 |
     r8 e[ r e] fs4 e8 e |
     r8 e[ r e] fs4 e |
     R1 |
@@ -85,13 +85,11 @@ ReedFourNumberOne = \relative c' {
     R1 * 4 | \bar "||"
     R1 * 4 | \bar "||" \key d \major
     R1 * 4 | \clef treble
-    r4 \InstrumentChange "Flute" #0 fs'' fs8 e4 cs8 ~ |
+    r4 \InstrumentChange #0 "Flute" fs'' fs8 e4 cs8 ~ |
     cs2 r |
     R1 \fermata | \bar "||"
 }
 
 % \score {
 %     \ReedFourNumberOne
-%     \layout {
-%     }
 % }

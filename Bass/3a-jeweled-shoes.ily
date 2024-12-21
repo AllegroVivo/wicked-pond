@@ -13,7 +13,7 @@ BassNumberThreeA = \relative c' {
     R1. | \time 4/4
     r2. \fermata r4 |
     R1 |
-    r2 r4 \InstrumentChange "Acoustic" #-0.5 g( \p |
+    r2 r4 \InstrumentChange "Acoustic" g( \p |
     \after 2.. \p fs1) \> |
     R1 | \bar "|."
 }

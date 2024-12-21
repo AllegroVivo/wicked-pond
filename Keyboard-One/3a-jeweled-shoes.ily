@@ -11,7 +11,7 @@ KeyboardOneNumberThreeARH = \relative c'' {
     R1. | \time 4/4
     R1 | \time 6/4
     R1. | \time 4/4 \break
-    \InstrumentChange "Piano w/ Sparkle" #-0.5
+    \InstrumentChange "Piano w/ Sparkle"
     <ds fs b ds>2.-> \fermata \arpeggio \sfz r4 |
     R1 * 4 | \bar "|."
 }

@@ -7,45 +7,23 @@
 \include "3-dear-old-shiz.ily"
 \include "3a-jeweled-shoes.ily"
 \include "3b-let-her-go.ily"
+\include "4-the-wizard-and-i.ily"
 
-HarpNumberOnePart = {
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+MakeHarpPart = 
+#(define-music-function (rh lh) (ly:music? ly:music?)
+  #{<<
     \new PianoStaff \with { instrumentName = "Harp" shortInstrumentName = "Hp." } <<
-        \new Staff = "rh" << \HarpNumberOneRH >>
-        \new Staff = "lh" << \HarpNumberOneLH >>
+      \new Staff = "rh" << $rh >>
+      \new Staff = "lh" << $lh >>
     >>
-}
+  >>#})
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-HarpNumberTwoPart = {
-    \new PianoStaff \with { instrumentName = "Harp" shortInstrumentName = "Hp." } <<
-        \new Staff = "rh" << \HarpNumberTwoRH >>
-        \new Staff = "lh" << \HarpNumberTwoLH >>
-    >>
-}
-
-HarpNumberTwoAPart = {
-    \new PianoStaff \with { instrumentName = "Harp" shortInstrumentName = "Hp." } <<
-        \new Staff = "rh" << \HarpNumberTwoARH >>
-        \new Staff = "lh" << \HarpNumberTwoALH >>
-    >>
-}
-
-HarpNumberThreePart = {
-    \new PianoStaff \with { instrumentName = "Harp" shortInstrumentName = "Hp." } <<
-        \new Staff = "rh" << \HarpNumberThreeRH >>
-        \new Staff = "lh" << \HarpNumberThreeLH >>
-    >>
-}
-
-HarpNumberThreeAPart = {
-    \new PianoStaff \with { instrumentName = "Harp" shortInstrumentName = "Hp." } <<
-        \new Staff = "rh" << \HarpNumberThreeARH >>
-        \new Staff = "lh" << \HarpNumberThreeALH >>
-    >>
-}
-
-HarpNumberThreeBPart = {
-    \new PianoStaff \with { instrumentName = "Harp" shortInstrumentName = "Hp." } <<
-        \new Staff = "rh" << \HarpNumberThreeBRH >>
-        \new Staff = "lh" << \HarpNumberThreeBLH >>
-    >>
-}
+HarpNumberOnePart = \MakeHarpPart \HarpNumberOneRH \HarpNumberOneLH
+HarpNumberTwoPart = \MakeHarpPart \HarpNumberTwoRH \HarpNumberTwoLH
+HarpNumberTwoAPart = \MakeHarpPart \HarpNumberTwoARH \HarpNumberTwoALH
+HarpNumberThreePart = \MakeHarpPart \HarpNumberThreeRH \HarpNumberThreeLH
+HarpNumberThreeAPart = \MakeHarpPart \HarpNumberThreeARH \HarpNumberThreeALH
+HarpNumberThreeBPart = \MakeHarpPart \HarpNumberThreeBRH \HarpNumberThreeBLH
+HarpNumberFourPart = \MakeHarpPart \HarpNumberFourRH \HarpNumberFourLH

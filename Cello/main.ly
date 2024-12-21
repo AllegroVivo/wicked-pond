@@ -7,45 +7,21 @@
 \include "3-dear-old-shiz.ily"
 \include "3a-jeweled-shoes.ily"
 \include "3b-let-her-go.ily"
+\include "4-the-wizard-and-i.ily"
 
-CelloNumberOnePart = {
-    <<
-        \new Staff \with { instrumentName = "Cello" shortInstrumentName = "Cello" }
-        { \CelloNumberOne }
-    >>
-}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+MakeCelloPart = 
+#(define-music-function (music) (ly:music?)
+  #{<<
+    \new Staff \with { instrumentName = "Cello" shortInstrumentName = "Cello" }
+        { $music }
+  >>#})
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-CelloNumberTwoPart = {
-    <<
-        \new Staff \with { instrumentName = "Cello" shortInstrumentName = "Cello" }
-        { \CelloNumberTwo }
-    >>
-}
-
-CelloNumberTwoAPart = {
-    <<
-        \new Staff \with { instrumentName = "Cello" shortInstrumentName = "Cello" }
-        { \CelloNumberTwoA }
-    >>
-}
-
-CelloNumberThreePart = {
-    <<
-        \new Staff \with { instrumentName = "Cello" shortInstrumentName = "Cello" }
-        { \CelloNumberThree }
-    >>
-}
-
-CelloNumberThreeAPart = {
-    <<
-        \new Staff \with { instrumentName = "Cello" shortInstrumentName = "Cello" }
-        { \CelloNumberThreeA }
-    >>
-}
-
-CelloNumberThreeBPart = {
-    <<
-        \new Staff \with { instrumentName = "Cello" shortInstrumentName = "Cello" }
-        { \CelloNumberThreeB }
-    >>
-}
+CelloNumberOnePart = \MakeCelloPart \CelloNumberOne
+CelloNumberTwoPart = \MakeCelloPart \CelloNumberTwo
+CelloNumberTwoAPart = \MakeCelloPart \CelloNumberTwo
+CelloNumberThreePart = \MakeCelloPart \CelloNumberThree
+CelloNumberThreeAPart = \MakeCelloPart \CelloNumberThreeA
+CelloNumberThreeBPart = \MakeCelloPart \CelloNumberThreeB
+CelloNumberFourPart = \MakeCelloPart \CelloNumberFour

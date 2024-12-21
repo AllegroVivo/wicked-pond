@@ -1,0 +1,91 @@
+\version "2.24.2"
+
+
+squiggly =
+\once \override Voice.NoteHead.stencil =
+#(grob-transformer
+  'stencil
+  (lambda (grob original )
+    (let* ((added-markup
+            #{
+              \markup
+              {
+                \postscript
+                "gsave 
+                /curve      {
+                2 -2 moveto
+                3 0 -2 -3 3 -3 rcurveto
+                3 0 -2 -3 4 -4 rcurveto
+                5 -1 4 -4 5 -5 rcurveto
+                } def
+                0.17 setlinewidth 
+                1 setlinecap
+                1 -1 moveto 
+                curve 
+                stroke 
+                grestore"
+              }
+            #})
+           (added-stencil (grob-interpret-markup grob added-markup)))
+      (if (ly:stencil? original)
+          (ly:stencil-add original added-stencil)
+          added-stencil))))
+
+
+
+
+squigglyTwo =
+#(define-music-function (note someNumber) (ly:music? number?)
+   #{
+     \once \override Voice.NoteHead.stencil =
+     #(grob-transformer
+       'stencil
+       (lambda (grob original )
+         (let* ((added-markup
+                 #{
+                   \markup
+                   {
+                     \postscript
+                     #(string-append
+                       "gsave 
+                        /curve {
+                        2 -2 moveto
+                        3 0 -2 -3 3 -3 rcurveto
+                        3 0 -2 -3 4 -4 rcurveto
+                        5 -1 4 -4 5 -5 rcurveto
+                        } def "
+                       (number->string someNumber)
+                       " setlinewidth 
+                        1 setlinecap
+                        1 -1 moveto 
+                        curve 
+                        stroke 
+                        grestore")
+                   }
+                 #})
+
+                (added-stencil (grob-interpret-markup grob added-markup)))
+           (if (ly:stencil? original)
+               (ly:stencil-add original added-stencil)
+               added-stencil))))
+     #note
+   #})
+
+{
+  \time 4/4
+  \squiggly c'1^\markup {"Example 1"}
+  \bar "||"
+
+  \time 4/4
+  \squigglyTwo c'1^"Example 2" #0.5
+  \bar "||"
+
+}
+
+\layout {
+  \context {
+    \Score
+    proportionalNotationDuration = #(ly:make-moment 1/6)
+
+  }
+}

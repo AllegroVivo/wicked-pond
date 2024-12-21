@@ -7,7 +7,7 @@ ReedFourNumberTwoA = \relative c' {
     \NumberTwoASetup \clef bass
     \key gf \major
     
-    \InstrumentChange "Bassoon" #-0.5 gf1 \p |
+    \InstrumentChange "Bassoon" gf1 \p |
     R1 * 2 |
     R1 \fermata \caesura |
     R1 \fermata | \bar "||" \key c \major

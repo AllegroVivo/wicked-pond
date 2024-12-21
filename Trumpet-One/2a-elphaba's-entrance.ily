@@ -14,7 +14,7 @@ TrumpetOneNumberTwoA = \relative c''' {
     R1 \fermata |
     c,1 ~ \p | \time 3/4
     \repeat volta 2 { c2. \laissezVibrer } | \key df \major \time 4/4
-    r2 \InstrumentChange "Str. Mute" #-0.5 gf' \fermata \mf \> |
+    r2 \InstrumentChange "Str. Mute" gf' \fermata \mf \> |
     R1 \fermata \! | \bar "||"
     r4 ef( \mp d bf ~ |
     bf1) | \bar "||"

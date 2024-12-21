@@ -9,7 +9,7 @@ KeyboardTwoNumberTwoRH = \relative c' {
     
     s1 * 9 |
     s4 \< s a8 e'4 fs8 |
-    \InstrumentChange "E. Pno." #-0.7
+    \InstrumentChange #-0.7 "E. Pno."
     r4 \mf r8 gs, <b cs gs'>2 |
     r4 fs8 a <b fs'>2 |
     r4 r8 gs <b cs gs'>2 |
@@ -40,7 +40,7 @@ KeyboardTwoNumberTwoRH = \relative c' {
     R1 \! |
     R1 | \bar "||"
     R1 * 12 | \bar "||" \key af \major
-    \InstrumentChange "Sombre Rhodes" #-0.25
+    \InstrumentChange #-0.25 "Sombre Rhodes"
     c,2 \mp c4 c8 bf ~ |
     bf4. bf8 ~ bf2 |
     \repeat volta 2 { c2 c4 c8 bf ~ | bf4. bf8 ~ bf2 | } \key e \major
@@ -66,14 +66,14 @@ KeyboardTwoNumberTwoRH = \relative c' {
     R1 * 8 |
     R1 \fermata |
     r2 \fermata r \fermata | \bar "||" \key c \major
-    \InstrumentChange "Brass" #-0.5
+    \InstrumentChange "Brass"
     <a,, b e>1-> \ff |
     r2 <c d f a>4-> <a d f>-> |
     <e a b e>1-> |
     r2 r4 <f a c e>-> |
     <g b d>4. \> r8 \! r2 |
     R1 * 3 | \bar "||" \key g \major \ottava #1
-    \InstrumentChange "Icicle Bell" #-0.2
+    \InstrumentChange #-0.2 "Icicle Bell"
     c'''8 g e c b' g e b |
     a' e c a a' e c a |
     a' fs d a a' fs d a |
@@ -100,7 +100,7 @@ KeyboardTwoNumberTwoLH = \relative c {
     \NumberTwoSetup \clef bass
     \key a \major 
     
-    \InstrumentChange "Harpsichord" #-0.25
+    \InstrumentChange #-0.25 "Harpsichord"
     \repeat unfold 4 {
         << 
             { r4 r8 ds fs b ds, e ~ | e4 r r2 | } 
@@ -128,7 +128,7 @@ KeyboardTwoNumberTwoLH = \relative c {
     b,8 fs' b4 d,,8 a' d4 |
     cs,8 gs' cs ds fs2 |
     <cs, cs'> r | \key e \major
-    \InstrumentChange "Belly E.P." #0
+    \InstrumentChange #0 "Belly E.P."
     r4 e''2 e4 |
     R1 |
     ds2 r4 <cs gs'> ~ |
@@ -154,7 +154,7 @@ KeyboardTwoNumberTwoLH = \relative c {
     \repeat volta 2 { R1 * 4 | }
     R1 * 17 |
     R1 \fermata | \key a \major
-    \InstrumentChange "Aggressive Clavinet" #-0.55
+    \InstrumentChange #-0.55 "Aggressive Clavinet"
     \repeat unfold 2 {
         <e e'>8-.-> e'-. e-.[ a-.] gs-. fs-. e-. a-. |
         gs-. fs-. e a-. gs-. fs-. e-. b-. |
@@ -173,7 +173,7 @@ KeyboardTwoNumberTwoLH = \relative c {
     r2 r4 <d a' d>-> |
     <g d'>4. r8 r2 |
     R1 * 3 | \clef treble \key g \major
-    \InstrumentChange "Wurly" #-0.5
+    \InstrumentChange "Wurly"
     <<
         {
             r4 g'' b g |
@@ -192,13 +192,13 @@ KeyboardTwoNumberTwoLH = \relative c {
     q |
     <f c' g'> ~ \arpeggio |
     q2. r4 | \clef bass
-    \InstrumentChange "Wurly" #0
+    \InstrumentChange #0 "Wurly"
     d1 |
     d |
     d2. ~ d8 a' |
     d4-> r r2 | 
     R1 |
-    \InstrumentChange "Trombones" #-1
+    \InstrumentChange #-1 "Trombones"
     r8 << 
         { <g, c>8 q[ q] q q q q | <g b>2 ~ q8 } 
         \\ 

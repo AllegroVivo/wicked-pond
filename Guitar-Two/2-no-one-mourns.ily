@@ -8,7 +8,7 @@ GuitarTwoNumberTwo = \relative c' {
     \key a \major 
     \override Glissando.style = #'normal
     
-    r4 \InstrumentChange "Electric" #-0.5 r8 ds \p fs4 ds8 e ~ |
+    r4 \InstrumentChange "Electric" r8 ds \p fs4 ds8 e ~ |
     e4 r r2 |
     \repeat unfold 3 {
         r4 r8 ds fs4 ds8 e ~ |
@@ -19,7 +19,7 @@ GuitarTwoNumberTwo = \relative c' {
     \InstrumentChange \markup \column {
         \line { "Steel String" }
         \line { "Acoustic" }
-    } #-0.5
+    }
     fs, \mf cs' fs b ~ b2 |
     d,8 a' b e ~ e2 |
     fs,,8 cs' fs b ~ b2 |
@@ -52,7 +52,7 @@ GuitarTwoNumberTwo = \relative c' {
     R1 * 12^"To 12-String" | \bar "||" \key af \major
     R1 * 2 |
     \repeat volta 2 { R1 * 2 | } \key e \major
-    \InstrumentChange "12-String Acoustic" #-0.5
+    \InstrumentChange "12-String Acoustic"
     \repeat volta 2 { e,8 b' e gs b ds b cs ~ | cs2 r | } \key g \major \time 3/4
     r4 d, fs |
     e2. |
@@ -93,7 +93,7 @@ GuitarTwoNumberTwo = \relative c' {
     \InstrumentChange \markup \column {
         \line { "Electric" }
         \line { \italic "w/ Distortion" }
-    } #-0.5
+    }
     cs'4-> \f gs' gs8 gs4 a8 ~ |
     a b4 b8 ~ b4 gs, |
     cs-> gs' gs8 gs4 a8 ~ |

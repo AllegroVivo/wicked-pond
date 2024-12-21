@@ -7,18 +7,18 @@ ReedThreeNumberOne = \relative c''' {
     \NumberOneSetup \clef treble
     \key d \major
     
-    \grace { s8 } r4 \InstrumentChange "Sop. Sax" #-0.5 d \ff d8 d4 d8 ~ |
+    \grace { s8 } r4 \InstrumentChange "Sop. Sax" d \ff d8 d4 d8 ~ |
     d d4 d8 ~ d2 |
     r4 d d8 d4 d8 ~ |
     d d4 d8 ~ d2 |
     r4 b b8 a4 d8 ~ |
     d4 r r2^"To Eb Clar." |
     R1 * 2 |
-    e8-. \mp \InstrumentChange "Eb Clarinet" #-0.25 ds16-. e-. 
+    e8-. \mp \InstrumentChange #-0.25 "Eb Clarinet" ds16-. e-. 
     \repeat unfold 15 { e8-. ds16-. e-. } |
     \repeat unfold 16 { e-. ds-. e8-. } |
     R1^"To Bb. Clar." \fermata | \bar "||" \key df \major
-    \repeat tremolo 16 { f,,32(^\( \InstrumentChange "Bb Clarinet" #0.25 af) | } |
+    \repeat tremolo 16 { f,,32(^\( \InstrumentChange #0.25 "Bb Clarinet" af) | } |
     \repeat unfold 3 { \repeat tremolo 16 { f32( af) | } }
     f4\) r r2 | \time 6/4
     R1. | \time 4/4
@@ -88,6 +88,4 @@ ReedThreeNumberOne = \relative c''' {
 
 % \score {
 %     \ReedThreeNumberOne
-%     \layout {
-%     }
 % }

@@ -7,7 +7,7 @@ KeyboardOneNumberTwoARH = \relative c'''' {
     \NumberTwoASetup \clef treble
     \key gf \major 
     
-    \ottava #1 \InstrumentChange "Piano" #-0.5
+    \ottava #1 \InstrumentChange "Piano"
     df8-. \pp df,-. bf'-.[ bf,-.] gf'-.[ gf,-.] f'-. f,-. |
     df'-.[ df,-.] f'-. f,-. gf'-.[ gf,-.] bf'-. bf,-. |
     df'-. df,-. bf'-.[ bf,-.] gf'-.[ gf,-.] f'-. f,-. |
@@ -23,7 +23,7 @@ KeyboardOneNumberTwoARH = \relative c'''' {
     R1 |
     << { gf'8 \mf f4 df8 ~ df4 af } \\ { af8 gf4 ef8 ~ ef4 bf } >> | \bar "||" \break
     R1 * 2 | 
-    r2 r4 \InstrumentChange "Piano/Pipe Organ" #-0.5 gs8 as | \bar "||"
+    r2 r4 \InstrumentChange "Piano/Pipe Organ" gs8 as | \bar "||"
     
 }
 

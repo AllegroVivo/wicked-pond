@@ -9,7 +9,7 @@ TromboneTwoNumberTwo = \relative c {
     \override Glissando.style = #'normal
     
     R1 * 6 |
-    \InstrumentChange "St. Mute" #-0.5
+    \InstrumentChange "St. Mute"
     cs2. \p \< r4 |
     cs2. r4 |
     r8 \! gs-. \mp cs4 ~ cs8 r cs4 ~ \< |
@@ -24,7 +24,7 @@ TromboneTwoNumberTwo = \relative c {
     gs2 ~ gs8 r r4 |
     R1 * 5 | \bar "||" \key e \major
     R1 * 8 |
-    \InstrumentChange "Open" #-0.5
+    \InstrumentChange "Open"
     fs,2. \p r4 |
     fs2. r4 |
     d4. r8 r2 |
@@ -48,7 +48,7 @@ TromboneTwoNumberTwo = \relative c {
     \repeat volta 2 { R2. * 2 | }
     R2. * 2 | \bar "||"
     R2. * 16 | \bar "||" \time 4/4
-    \InstrumentChange "Solotone" #-0.5
+    \InstrumentChange "Solotone"
     b'4-. \mf b-. as-. as-. |
     b-. b8-. bf( ~ bf8. a!16 bf4) |
     b!-. b8-. bf( ~ bf8. a!16 bf8-.) r |
@@ -77,7 +77,7 @@ TromboneTwoNumberTwo = \relative c {
     b-. b8-. bf( ~ bf8. a!16 bf4) |
     b!-. b8-. bf( ~ bf8. a!16 bf8-.) r |
     R1 \fermata | \bar "||" \key a \major
-    \InstrumentChange "Open" #-0.5
+    \InstrumentChange "Open"
     e,4^^ \f r r2 |
     r r4 r8 b |
     e4^^ r r2 |

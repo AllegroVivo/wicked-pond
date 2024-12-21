@@ -5,7 +5,7 @@
 %-----------%
 InstrumentChange =
 #(define-music-function
-  (mkp align) (markup? number?)
+  (align mkp) ((number? -0.5) markup?)
   #{
   <>^\markup
   \general-align #X #align
@@ -16,7 +16,7 @@ InstrumentChange =
 
 VocalistName = 
 #(define-music-function
-  (mkp align) (markup? number?)
+  (align mkp) ((number? -0.5) markup?)
   #{
   <>^\markup
   \general-align #X #align
@@ -25,22 +25,30 @@ VocalistName =
   \smallCaps #mkp
   #})
 
-%---------------------%
-% Dynamics & Markings %
-%---------------------%
+
+%---------------------------%
+% Dynamics & Other Markings %
+%---------------------------%
 sfzp = _\markup { \translate #'(-2 . 0) \dynamic sfz - \dynamic p }
 sfzpp = _\markup { \translate #'(-3 . 0) \dynamic sfz - \dynamic pp }
 sfzf = _\markup { \translate #'(-2 . 0) \dynamic sfz - \dynamic f }
 sfzff = _\markup { \translate #'(-3 . 0) \dynamic sfz - \dynamic ff }
+subp = _\markup { \translate #'(-2 . 0) \italic sub. \dynamic p }
+submf = _\markup { \translate #'(-2 . 0) \italic sub. \dynamic mf }
 
 ten = ^\markup { \translate #'(-0.6 . 0) \italic "ten." }
 solo = ^\markup { \translate #'(-0.6 . 0) \italic "solo" }
+play = ^\markup { \translate #'(-0.6 . 0) \bold \italic "Play" }
 sim = _\markup { \translate #'(-0.6 . 0) \italic "sim." }
 
 pizz = ^\markup { \translate #'(-1 . 0) \italic "pizz." }
 arco = ^\markup { \translate #'(-1 . 0) \italic "arco" }
 conSord = ^\markup { \translate #'(-1 . 0) \italic "con sord." }
 senzaSord = ^\markup { \translate #'(-1 . 0) \italic "senza sord." }
+
+clean = ^\markup { \translate #'(-2.5 . 0) \italic "clean" }
+withpick = ^\markup { \translate #'(-2.5 . 0) \italic "w/pick" }
+letring = _\markup { \translate #'(-2.5 . 0) \italic "let ring" }
 
 %-------------%
 % Song Setups %
@@ -51,6 +59,7 @@ GlobalSetup = {
     \numericTimeSignature
     \override Glissando.style = #'trill
     \set Staff.extraNatural = ##f
+    \set breathMarkType = #'outsidecomma
 }
 %-------------%
 NumberOneSetup = {
@@ -83,6 +92,11 @@ NumberThreeASetup = {
 NumberThreeBSetup = {
     \GlobalSetup
     \time 6/8
+}
+%-------------%
+NumberFourSetup = {
+    \GlobalSetup
+    \time 4/4
 }
 %-------------%
 

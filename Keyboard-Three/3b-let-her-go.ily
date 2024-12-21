@@ -15,7 +15,7 @@ KeyboardThreeNumberThreeBLH = \relative c, {
     \key e \major \dynamicUp
     
     R2. * 4 |
-    \InstrumentChange "Celli/Bassi" #-0.5
+    \InstrumentChange "Celli/Bassi"
     <a a'>2. ~ |
     q ~ |
     q ~ |

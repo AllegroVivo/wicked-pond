@@ -7,7 +7,7 @@ ReedTwoNumberOne = \relative c''' {
     \NumberOneSetup \clef treble
     \key c \major 
     
-    \grace { s8 } \InstrumentChange "Oboe" #-0.5
+    \grace { s8 } \InstrumentChange "Oboe"
     r4 a \ff a8 a4 c8 ~ |
     c b4 b8 ~ b2 |
     r4 a a8 a4 c8 ~ |
@@ -21,7 +21,7 @@ ReedTwoNumberOne = \relative c''' {
     \repeat unfold 8 { g16-. cs-. fs,8-. } |
     \repeat unfold 8 { g16-. d'-. fs,8-. } | 
     R1^"To Bs. Ob." \fermata | \bar "||" \key b \major
-    \InstrumentChange "Bass Oboe" #-0.5
+    \InstrumentChange "Bass Oboe"
     fs,1 ~ \f |
     fs2. r4 |
     b,\( b' ~ b8 as fs4 ~ |
@@ -56,7 +56,7 @@ ReedTwoNumberOne = \relative c''' {
     b) \fermata | \bar "||" \key a \major \time 4/4
     R1^"To Eng. Hn." |
     R1 * 4 | \key e \major
-    \InstrumentChange "Eng. Hn." #-0.5
+    \InstrumentChange "Eng. Hn."
     r2 b,( \p |
     fs' a ~ |
     a1) |
@@ -80,6 +80,4 @@ ReedTwoNumberOne = \relative c''' {
 
 % \score {
 %     \ReedTwoNumberOne
-%     \layout {
-%     }
 % }

@@ -11,7 +11,7 @@ KeyboardTwoNumberThreeARH = \relative c'' {
     R1. | \time 4/4
     R1 | \time 6/4
     R1. | \time 4/4
-    \InstrumentChange "Magic Shimmer" #-0.5
+    \InstrumentChange "Magic Shimmer"
     <ds fs b ds>2.-> \fermata \arpeggio \sfz r4 |
     R1 * 4 | \bar "|."
 }

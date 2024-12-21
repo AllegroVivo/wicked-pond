@@ -8,7 +8,7 @@ TrumpetOneNumberTwo = \relative c' {
     \key b \major
     
     R1 * 11 |
-    r4 r8 \InstrumentChange "St. Mute" #0 fs-. gs( cs) gs-. as ~ |
+    r4 r8 \InstrumentChange #0 "St. Mute" fs-. gs( cs) gs-. as ~ |
     as4. r8 r2 |
     r gs4 gs |
     r4 cs8 b cs4.( b8 |
@@ -21,7 +21,7 @@ TrumpetOneNumberTwo = \relative c' {
     r4 cs8( b cs4) b8 cs ~ |
     cs4 r r2^"To Fluegel." |
     R1 * 2 | \bar "||" \key fs \major
-    r2 \InstrumentChange "Fluegel" #-0.5 as( \p |
+    r2 \InstrumentChange "Flugel" as( \p |
     gs1) |
     r2 cs8 r cs4 ~ |
     cs2 r |
@@ -50,7 +50,7 @@ TrumpetOneNumberTwo = \relative c' {
     \repeat volta 2 { R2. * 2 | }
     R2. * 2 | \bar "||"
     R2. * 12 | 
-    \InstrumentChange "Cup Mute" #-0.5
+    \InstrumentChange "Cup Mute"
     b2.( \mp |
     a ~ \! |
     a |

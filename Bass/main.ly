@@ -7,45 +7,21 @@
 \include "3-dear-old-shiz.ily"
 \include "3a-jeweled-shoes.ily"
 \include "3b-let-her-go.ily"
+\include "4-the-wizard-and-i.ily"
 
-BassNumberOnePart = {
-    <<
-        \new Staff \with { instrumentName = "Bass" shortInstrumentName = "Bs." }
-        { \BassNumberOne }
-    >>
-}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+MakeBassPart = 
+#(define-music-function (music) (ly:music?)
+  #{<<
+    \new Staff \with { instrumentName = "Bass" shortInstrumentName = "Bass" }
+        { $music }
+  >>#})
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-BassNumberTwoPart = {
-    <<
-        \new Staff \with { instrumentName = "Bass" shortInstrumentName = "Bs." }
-        { \BassNumberTwo }
-    >>
-}
-
-BassNumberTwoAPart = {
-    <<
-        \new Staff \with { instrumentName = "Bass" shortInstrumentName = "Bs." }
-        { \BassNumberTwoA }
-    >>
-}
-
-BassNumberThreePart = {
-    <<
-        \new Staff \with { instrumentName = "Bass" shortInstrumentName = "Bs." }
-        { \BassNumberThree }
-    >>
-}
-
-BassNumberThreeAPart = {
-    <<
-        \new Staff \with { instrumentName = "Bass" shortInstrumentName = "Bs." }
-        { \BassNumberThreeA }
-    >>
-}
-
-BassNumberThreeBPart = {
-    <<
-        \new Staff \with { instrumentName = "Bass" shortInstrumentName = "Bs." }
-        { \BassNumberThreeB }
-    >>
-}
+BassNumberOnePart = \MakeBassPart \BassNumberOne
+BassNumberTwoPart = \MakeBassPart \BassNumberTwo
+BassNumberTwoAPart = \MakeBassPart \BassNumberTwo
+BassNumberThreePart = \MakeBassPart \BassNumberThree
+BassNumberThreeAPart = \MakeBassPart \BassNumberThreeA
+BassNumberThreeBPart = \MakeBassPart \BassNumberThreeB
+BassNumberFourPart = \MakeBassPart \BassNumberFour

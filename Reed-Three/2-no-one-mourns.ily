@@ -8,14 +8,14 @@ ReedThreeNumberTwo = \relative c {
     \key b \major 
     
     R1 |
-    \InstrumentChange \markup { "B" \flat " Clarinet" } #-1
+    \InstrumentChange #-1 "Bb Clarinet"
     r4 r8 fs( \p b fs' fs,4) |
     \repeat unfold 2 { R1 | r4 r8 fs( b fs' fs,4) | }
     r4 r8 es8( fs-.) \< cs'-. es,-. fs ~ |
     fs4. fs8( b) fs'-. fs,4 \! |
     r4 r8 es( \mp gs) cs es, fs ~ \< |
     fs4 r8 fs8-.^( b-. fs'-. fs,-. gs'-.) \! | \bar "||"
-    \InstrumentChange "Bass Clarinet" #-0.85
+    \InstrumentChange #-0.85 "Bass Clarinet"
     gs,-. \mf ds'-. gs2 r4 |
     e,8[( b']) gs'-. b-. cs2 |
     gs,8-. ds'-. gs2 r4 |
@@ -31,8 +31,8 @@ ReedThreeNumberTwo = \relative c {
     cs,^( e,8 b' ds gs |
     ds1 ~ |
     ds8) r r4 r2 | \bar "||" \key fs \major
-    R1 * 6^\markup { "To B" \flat " Clarinet" } |
-    \InstrumentChange \markup { "B" \flat " Clarinet" } #-0.5
+    R1 * 6^"To Bb Clarinet" |
+    \InstrumentChange "Bb Clarinet"
     es'2 es8 r fs4( ~ |
     fs2 es |
     fs) fs |

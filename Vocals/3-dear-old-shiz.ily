@@ -9,7 +9,7 @@ VocalsNumberThreeLead = \relative c'' {
     
     r4 | \bar "||"
     R1 * 11 \caesura |
-    \VocalistName "Glinda:" #-0.5
+    \VocalistName "Glinda:"
     gs8^( fs b as ds cs fs4) \fermata \glissando |
     b,1 |  % Need this to be a tie, but can't with the lyrics.
     b \fermata | \bar "|."

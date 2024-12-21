@@ -7,7 +7,7 @@ ReedOneNumberTwoA = \relative c'' {
     \NumberTwoASetup \clef treble
     \key gf \major 
     
-    r2 \InstrumentChange "Flute" #-0.5 df( ~ \mp |
+    r2 \InstrumentChange "Flute" df( ~ \mp |
     df ef |
     df1) |
     af'2( gf) \fermata \caesura |

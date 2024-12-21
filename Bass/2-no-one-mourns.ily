@@ -7,10 +7,10 @@ BassNumberTwo = \relative c {
     \NumberTwoSetup \clef bass
     \key a \major 
     
-    \InstrumentChange "Acoustic" #-0.5
+    \InstrumentChange "Acoustic"
     cs4 \p \pizz r r2 |
     \repeat unfold 9 { cs4 r r2 | }
-    \InstrumentChange "Electric" #-0.5
+    \InstrumentChange "Electric"
     fs1 |
     d |
     fs |
@@ -55,7 +55,7 @@ BassNumberTwo = \relative c {
     gf4 r r2 |
     \repeat volta 2 { R1 * 2 | } \key e \major
     \repeat volta 2 { R1 * 2 | } \key g \major \time 3/4
-    \InstrumentChange "Acoustic (?)" #-0.5
+    \InstrumentChange "Acoustic (?)"
     g4 \pizz r r | 
     c, r r |
     g'4 r r | 
@@ -116,7 +116,7 @@ BassNumberTwo = \relative c {
     gs2:32 gs8-> gs-> gs-> gs-> |
     R1 \fermata |
     r2 \fermata r \fermata | \bar "||" \key c \major
-    \InstrumentChange "Fender" #-0.5
+    \InstrumentChange "Fender"
     <e a>1-> ~ \ff |
     q8 r r4 c''---> <a d>---> |
     <a, e'>1-> |

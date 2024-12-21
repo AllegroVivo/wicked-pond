@@ -7,45 +7,21 @@
 \include "3-dear-old-shiz.ily"
 \include "3a-jeweled-shoes.ily"
 \include "3b-let-her-go.ily"
+\include "4-the-wizard-and-i.ily"
 
-TromboneOneNumberOnePart = {
-    <<
-        \new Staff \with { instrumentName = "Trombone I" shortInstrumentName = "Tbn. I" }
-        { \TromboneOneNumberOne }
-    >>
-}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+MakeTromboneOnePart = 
+#(define-music-function (music) (ly:music?)
+  #{<<
+    \new Staff \with { instrumentName = "Trombone I" shortInstrumentName = "Tbn. I" }
+        { $music }
+  >>#})
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-TromboneOneNumberTwoPart = {
-    <<
-        \new Staff \with { instrumentName = "Trombone I" shortInstrumentName = "Tbn. I" }
-        { \TromboneOneNumberTwo }
-    >>
-}
-
-TromboneOneNumberTwoAPart = {
-    <<
-        \new Staff \with { instrumentName = "Trombone I" shortInstrumentName = "Tbn. I" }
-        { \TromboneOneNumberTwoA }
-    >>
-}
-
-TromboneOneNumberThreePart = {
-    <<
-        \new Staff \with { instrumentName = "Trombone I" shortInstrumentName = "Tbn. I" }
-        { \TromboneOneNumberThree }
-    >>
-}
-
-TromboneOneNumberThreeAPart = {
-    <<
-        \new Staff \with { instrumentName = "Trombone I" shortInstrumentName = "Tbn. I" }
-        { \TromboneOneNumberThreeA }
-    >>
-}
-
-TromboneOneNumberThreeBPart = {
-    <<
-        \new Staff \with { instrumentName = "Trombone I" shortInstrumentName = "Tbn. I" }
-        { \TromboneOneNumberThreeB }
-    >>
-}
+TromboneOneNumberOnePart = \MakeTromboneOnePart \TromboneOneNumberOne
+TromboneOneNumberTwoPart = \MakeTromboneOnePart \TromboneOneNumberTwo
+TromboneOneNumberTwoAPart = \MakeTromboneOnePart \TromboneOneNumberTwo
+TromboneOneNumberThreePart = \MakeTromboneOnePart \TromboneOneNumberThree
+TromboneOneNumberThreeAPart = \MakeTromboneOnePart \TromboneOneNumberThreeA
+TromboneOneNumberThreeBPart = \MakeTromboneOnePart \TromboneOneNumberThreeB
+TromboneOneNumberFourPart = \MakeTromboneOnePart \TromboneOneNumberFour

@@ -7,7 +7,7 @@ ReedThreeNumberTwoA = \relative c'' {
     \NumberTwoASetup \clef treble
     \key af \major 
     
-    r2 \InstrumentChange "Bb Clarinet" #-0.5 af( ~ \p |
+    r2 \InstrumentChange "Bb Clarinet" af( ~ \p |
     af bf |
     af1) |
     d2( c) \fermata \caesura |

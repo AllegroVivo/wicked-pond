@@ -109,7 +109,7 @@ KeyboardOneNumberTwoLH = \relative c,, {
     
     R1 * 5 |
     R1 * 5 | 
-    \InstrumentChange "Pno. & Timp." #-0.5
+    \InstrumentChange "Pno. & Timp."
     <<
         { <fs fs'>1_> | <d d'>_> | <fs fs'>_> | <d d'>_> | }
         \\

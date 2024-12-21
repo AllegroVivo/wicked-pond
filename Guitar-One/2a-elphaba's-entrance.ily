@@ -11,7 +11,7 @@ GuitarOneNumberTwoA = \relative c' {
     R1 \fermata \caesura | 
     R1 \fermata | \bar "||" \key c \major
     R1 \fermata |
-    \InstrumentChange "Nylon Acoustic" #-0.5
+    \InstrumentChange "Nylon Acoustic"
     g1 \mp \laissezVibrer |
     r4 af''8 \mf bf c[ bf] af bf | \time 3/4
     \repeat volta 2 { c bf af[ bf] c bf } | \key b \major \time 4/4

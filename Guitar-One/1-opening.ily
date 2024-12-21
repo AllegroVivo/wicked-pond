@@ -8,7 +8,7 @@ GuitarOneNumberOne = \relative c' {
     \key c \major 
     \override Glissando.style = #'normal
     
-    \grace { s8 } \InstrumentChange "Electric" #-0.6
+    \grace { s8 } \InstrumentChange #-0.6 "Electric"
     a1-> ~ \ff |
     a2. e'4 \ten |
     a,1-> ~ |
@@ -16,7 +16,7 @@ GuitarOneNumberOne = \relative c' {
     a,1-> ~ |
     a2 r |
     R1 * 2 |
-    \xNotesOn \InstrumentChange "High Clicks" #-0.75
+    \xNotesOn \InstrumentChange #-0.75 "High Clicks"
     f''8-. \mf f-. f[-. f]-. f-. f-. f[-. f]-. |
     \repeat unfold 7 { f-. f-. f[-. f]-. f-. f-. f[-. f]-. | }
     R1 \fermata | \bar "||" \key b \major |
@@ -41,7 +41,7 @@ GuitarOneNumberOne = \relative c' {
     <f a c f>4-> r r2 |
     R1 * 4 | \bar "||" \key b \major
     R1 * 8 | \bar "||" \key d \major 
-    \InstrumentChange "Seek-Wah" #-0.5 % Add "(In triplets)"
+    \InstrumentChange "Seek-Wah" % Add "(In triplets)"
     <d'! fs a!>1 ~ \f |
     q2 <b e>4 fs' ~ |
     <fs a>2 gs4 a8 gs ~|
@@ -59,7 +59,7 @@ GuitarOneNumberOne = \relative c' {
     e ~ |
     e |
     e \fermata | \bar "||" \key a \major \time 4/4
-    r2 \InstrumentChange "E-Bow" #-0.75
+    r2 \InstrumentChange #-0.75 "E-Bow"
     \hideNotes \grace { b16\glissando } \unHideNotes b'2 ~ \mp |
     b b ~ |
     b1 ~ |
@@ -80,6 +80,4 @@ GuitarOneNumberOne = \relative c' {
 
 % \score {
 %     \GuitarOneNumberOne
-%     \layout {
-%     }
 % }

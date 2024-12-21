@@ -7,45 +7,21 @@
 \include "3-dear-old-shiz.ily"
 \include "3a-jeweled-shoes.ily"
 \include "3b-let-her-go.ily"
+\include "4-the-wizard-and-i.ily"
 
-GuitarOneNumberOnePart = {
-    <<
-        \new Staff \with { instrumentName = "Guitar I" shortInstrumentName = "Gtr. I" }
-        { \GuitarOneNumberOne }
-    >>
-}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+MakeGuitarOnePart = 
+#(define-music-function (music) (ly:music?)
+  #{<<
+    \new Staff \with { instrumentName = "Guitar I" shortInstrumentName = "Gtr. I" }
+        { $music }
+  >>#})
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-GuitarOneNumberTwoPart = {
-    <<
-        \new Staff \with { instrumentName = "Guitar I" shortInstrumentName = "Gtr. I" }
-        { \GuitarOneNumberTwo }
-    >>
-}
-
-GuitarOneNumberTwoAPart = {
-    <<
-        \new Staff \with { instrumentName = "Guitar I" shortInstrumentName = "Gtr. I" }
-        { \GuitarOneNumberTwoA }
-    >>
-}
-
-GuitarOneNumberThreePart = {
-    <<
-        \new Staff \with { instrumentName = "Guitar I" shortInstrumentName = "Gtr. I" }
-        { \GuitarOneNumberThree }
-    >>
-}
-
-GuitarOneNumberThreeAPart = {
-    <<
-        \new Staff \with { instrumentName = "Guitar I" shortInstrumentName = "Gtr. I" }
-        { \GuitarOneNumberThreeA }
-    >>
-}
-
-GuitarOneNumberThreeBPart = {
-    <<
-        \new Staff \with { instrumentName = "Guitar I" shortInstrumentName = "Gtr. I" }
-        { \GuitarOneNumberThreeB }
-    >>
-}
+GuitarOneNumberOnePart = \MakeGuitarOnePart \GuitarOneNumberOne
+GuitarOneNumberTwoPart = \MakeGuitarOnePart \GuitarOneNumberTwo
+GuitarOneNumberTwoAPart = \MakeGuitarOnePart \GuitarOneNumberTwo
+GuitarOneNumberThreePart = \MakeGuitarOnePart \GuitarOneNumberThree
+GuitarOneNumberThreeAPart = \MakeGuitarOnePart \GuitarOneNumberThreeA
+GuitarOneNumberThreeBPart = \MakeGuitarOnePart \GuitarOneNumberThreeB
+GuitarOneNumberFourPart = \MakeGuitarOnePart \GuitarOneNumberFour

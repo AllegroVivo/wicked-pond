@@ -7,31 +7,23 @@
 \include "3-dear-old-shiz.ily"
 \include "3a-jeweled-shoes.ily"
 \include "3b-let-her-go.ily"
+\include "4-the-wizard-and-i.ily"
 
-VocalsNumberOnePart = {
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+MakeVocalsPart = 
+#(define-music-function (top mid bottom) (ly:music? ly:music? ly:music?)
+  #{<<
     \new ChoirStaff \with { instrumentName = " " shortInstrumentName = " " } <<
-        \new Staff = "top" << \VocalsNumberOneTop >>
-        \new Staff = "mid" << \VocalsNumberOneMid >>
-        \new Staff = "btm" << \VocalsNumberOneBottom >>
+        \new Staff = "top" << $top >>
+        \new Staff = "mid" << $mid >>
+        \new Staff = "btm" << $bottom >>
     >>
-}
+  >>#})
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-VocalsNumberTwoPart = {
-    \new ChoirStaff \with { instrumentName = " " shortInstrumentName = " " } <<
-        \new Staff = "top" << \VocalsNumberTwoTop >>
-        \new Staff = "mid" << \VocalsNumberTwoMid >>
-        \new Staff = "btm" << \VocalsNumberTwoBottom >>
-    >>
-}
-
-VocalsNumberTwoAPart = {
-    \new ChoirStaff \with { instrumentName = " " shortInstrumentName = " " } <<
-        \new Staff = "top" << \VocalsNumberTwoATop >>
-        \new Staff = "mid" << \VocalsNumberTwoAMid >>
-        \new Staff = "btm" << \VocalsNumberTwoABottom >>
-    >>
-}
-
+VocalsNumberOnePart = \MakeVocalsPart \VocalsNumberOneTop \VocalsNumberOneMid \VocalsNumberOneBottom
+VocalsNumberTwoPart = \MakeVocalsPart \VocalsNumberTwoTop \VocalsNumberTwoMid \VocalsNumberTwoBottom
+VocalsNumberTwoAPart = \MakeVocalsPart \VocalsNumberTwoATop \VocalsNumberTwoAMid \VocalsNumberTwoABottom
 VocalsNumberThreePart = {
     \new ChoirStaff <<
         \new Staff { \VocalsNumberThreeLead }
@@ -58,19 +50,6 @@ VocalsNumberThreePart = {
         \new Lyrics \lyricsto "bass" \bassVerse
     >>
 }
-
-VocalsNumberThreeAPart = {
-    \new ChoirStaff \with { instrumentName = " " shortInstrumentName = " " } <<
-        \new Staff = "top" << \VocalsNumberThreeATop >>
-        \new Staff = "mid" << \VocalsNumberThreeAMid >>
-        \new Staff = "btm" << \VocalsNumberThreeABottom >>
-    >>
-}
-
-VocalsNumberThreeBPart = {
-    \new ChoirStaff \with { instrumentName = " " shortInstrumentName = " " } <<
-        \new Staff = "top" << \VocalsNumberThreeBTop >>
-        \new Staff = "mid" << \VocalsNumberThreeBMid >>
-        \new Staff = "btm" << \VocalsNumberThreeBBottom >>
-    >>
-}
+VocalsNumberThreeAPart = \MakeVocalsPart \VocalsNumberThreeATop \VocalsNumberThreeAMid \VocalsNumberThreeABottom
+VocalsNumberThreeBPart = \MakeVocalsPart \VocalsNumberThreeBTop \VocalsNumberThreeBMid \VocalsNumberThreeBBottom
+VocalsNumberFourPart = \MakeVocalsPart \VocalsNumberFourTop \VocalsNumberFourMid \VocalsNumberFourBottom

@@ -11,14 +11,14 @@ TrumpetTwoNumberTwo = \relative c'' {
     as4.( \mf gs8 as4. fs8 |
     as) r gs4 ~ gs8 r r4 |
     R1 * 2 |
-    \InstrumentChange "St. Mute" #-0.5
+    \InstrumentChange "St. Mute"
     r4 fs8 ds fs4.^( fs8 |
     e) gs ~ gs4 gs( b) |
     r4 r8 as \f as4. as8 |
     as2.-- \> r4 \! |
     R1 * 7^"To Fluegel" | \bar "||" \key fs \major
     R1 * 2 |
-    r2 \InstrumentChange "Fluegel" #-0.5 gs8 \p r gs4 ~ |
+    r2 \InstrumentChange "Flugel" gs8 \p r gs4 ~ |
     gs2 r |
     fs1( |
     es |
@@ -28,10 +28,10 @@ TrumpetTwoNumberTwo = \relative c'' {
     as as |
     as( gs4) r |
     R1 * 3 | \bar "||"
-    \InstrumentChange \markup {
+    \InstrumentChange #-0.75 \markup {
         \override #'(line-width . 1)
         \wordwrap { "Trumpet" \italic "(w/ cup)" }
-    } #-0.75
+    }
     ds'2 \mf ds ~ |
     ds ds( |
     cs) cs8 r cs4-> ~ |
@@ -67,7 +67,7 @@ TrumpetTwoNumberTwo = \relative c'' {
     r a-. r gs-. |
     R1 * 7 |
     R1 \fermata | \bar "||" \key b \major
-    \InstrumentChange "Open" #-0.5
+    \InstrumentChange "Open"
     cs4^^ \f r r2 |
     R1 * 2 |
     r4 e->-. \mf r2 |

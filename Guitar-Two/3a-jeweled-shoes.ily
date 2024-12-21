@@ -11,7 +11,7 @@ GuitarTwoNumberThreeA = \relative c''' {
     R1. | \time 4/4
     R1 | \time 6/4
     R1. | \time 4/4
-    \InstrumentChange "E-Bow" #-0.5
+    \InstrumentChange "E-Bow"
     ds2. \fermata \laissezVibrer \sfz r4 |
     R1 * 4 | \bar "|."
 }

@@ -7,7 +7,7 @@ KeyboardTwoNumberTwoARH = \relative c' {
     \NumberTwoASetup \clef treble
     \key gf \major 
     
-    \InstrumentChange "Celesta" #-0.5
+    \InstrumentChange "Celesta"
     \repeat unfold 15 { df'16 f gf bf } df, f gf bf \fermata \caesura |
     R1 \fermata | \bar "||" \key c \major
     R1 \fermata | 
