@@ -428,9 +428,86 @@
 %             >>
 %         }
 %     }
+%     \bookpart {
+%         \header {
+%             title = "4. The Wizard And I"
+%             composer = \markup \column { 
+%                 \line { "Music & Lyrics by:" }
+%                 \line { \italic "Stephen Schwartz" }
+%             }
+%         }
+%         \score {
+%             <<
+%                 % Reeds 1-4
+%                 \new StaffGroup <<
+%                     \ReedOneNumberFourPart
+%                     \ReedTwoNumberFourPart
+%                     \ReedThreeNumberFourPart
+%                     \ReedFourNumberFourPart
+%                 >>
+%                 % Brass
+%                 \new ChoirStaff <<
+%                     % Horns 1-2
+%                     \new GrandStaff \with {
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \HornOneNumberFourPart
+%                         \HornTwoNumberFourPart
+%                     >>
+%                     % Trumpets 1-2
+%                     \new GrandStaff \with { 
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \TrumpetOneNumberFourPart
+%                         \TrumpetTwoNumberFourPart
+%                     >>
+%                     % Trombones 1-2
+%                     \new GrandStaff \with {
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \TromboneOneNumberFourPart
+%                         \TromboneTwoNumberFourPart
+%                     >>
+%                 >>
+%                 % Percussion & Drums
+%                 \new StaffGroup <<
+%                     \PercussionNumberFourPart
+%                     \new Staff { a }  % Drums... eventually
+%                 >>
+%                 % Guitars 1-2
+%                 \new StaffGroup <<
+%                     \GuitarOneNumberFourPart
+%                     \GuitarTwoNumberFourPart
+%                 >>
+%                 % Vocals
+%                 \VocalsNumberFourPart
+%                 % Harp
+%                 \HarpNumberFourPart
+%                 % Keyboard 1
+%                 \KeyboardOneNumberFourPart
+%                 % Keyboard 2
+%                 \KeyboardTwoNumberFourPart
+%                 % Keyboard 3
+%                 \KeyboardThreeNumberFourPart
+%                 % Strings
+%                 \new StaffGroup <<
+%                     % Violins 1-2
+%                     \new GrandStaff \with {
+%                         systemStartDelimiter = #'SystemStartSquare
+%                     } <<
+%                         \ViolinOneNumberFourPart
+%                         \ViolinTwoNumberFourPart
+%                     >>
+%                     \ViolaNumberFourPart
+%                     \CelloNumberFourPart
+%                     \BassNumberFourPart
+%                 >>
+%             >>
+%         }
+%     }
     \bookpart {
         \header {
-            title = "4. The Wizard And I"
+            title = "5. What Is This Feeling?"
             composer = \markup \column { 
                 \line { "Music & Lyrics by:" }
                 \line { \italic "Stephen Schwartz" }
@@ -440,10 +517,10 @@
             <<
                 % Reeds 1-4
                 \new StaffGroup <<
-                    \ReedOneNumberFourPart
-                    \ReedTwoNumberFourPart
-                    \ReedThreeNumberFourPart
-                    \ReedFourNumberFourPart
+                    \ReedOneNumberFivePart
+                    \ReedTwoNumberFivePart
+                    \ReedThreeNumberFivePart
+                    \ReedFourNumberFivePart
                 >>
                 % Brass
                 \new ChoirStaff <<
@@ -451,56 +528,56 @@
                     \new GrandStaff \with {
                         systemStartDelimiter = #'SystemStartSquare
                     } <<
-                        \HornOneNumberFourPart
-                        \HornTwoNumberFourPart
+                        \HornOneNumberFivePart
+                        \HornTwoNumberFivePart
                     >>
                     % Trumpets 1-2
                     \new GrandStaff \with { 
                         systemStartDelimiter = #'SystemStartSquare
                     } <<
-                        \TrumpetOneNumberFourPart
-                        \TrumpetTwoNumberFourPart
+                        \TrumpetOneNumberFivePart
+                        \TrumpetTwoNumberFivePart
                     >>
                     % Trombones 1-2
                     \new GrandStaff \with {
                         systemStartDelimiter = #'SystemStartSquare
                     } <<
-                        \TromboneOneNumberFourPart
-                        \TromboneTwoNumberFourPart
+                        \TromboneOneNumberFivePart
+                        \TromboneTwoNumberFivePart
                     >>
                 >>
                 % Percussion & Drums
                 \new StaffGroup <<
-                    \PercussionNumberFourPart
+                    \PercussionNumberFivePart
                     \new Staff { a }  % Drums... eventually
                 >>
                 % Guitars 1-2
                 \new StaffGroup <<
-                    \GuitarOneNumberFourPart
-                    \GuitarTwoNumberFourPart
+                    \GuitarOneNumberFivePart
+                    \GuitarTwoNumberFivePart
                 >>
                 % Vocals
-                \VocalsNumberFourPart
+                \VocalsNumberFivePart
                 % Harp
-                \HarpNumberFourPart
+                \HarpNumberFivePart
                 % Keyboard 1
-                \KeyboardOneNumberFourPart
+                \KeyboardOneNumberFivePart
                 % Keyboard 2
-                \KeyboardTwoNumberFourPart
+                \KeyboardTwoNumberFivePart
                 % Keyboard 3
-                \KeyboardThreeNumberFourPart
+                \KeyboardThreeNumberFivePart
                 % Strings
                 \new StaffGroup <<
                     % Violins 1-2
                     \new GrandStaff \with {
                         systemStartDelimiter = #'SystemStartSquare
                     } <<
-                        \ViolinOneNumberFourPart
-                        \ViolinTwoNumberFourPart
+                        \ViolinOneNumberFivePart
+                        \ViolinTwoNumberFivePart
                     >>
-                    \ViolaNumberFourPart
-                    \CelloNumberFourPart
-                    \BassNumberFourPart
+                    \ViolaNumberFivePart
+                    \CelloNumberFivePart
+                    \BassNumberFivePart
                 >>
             >>
         }

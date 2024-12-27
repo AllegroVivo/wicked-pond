@@ -8,6 +8,7 @@
 \include "3a-jeweled-shoes.ily"
 \include "3b-let-her-go.ily"
 \include "4-the-wizard-and-i.ily"
+\include "5-what-is-this-feeling.ily"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 MakePercussionPart = 
@@ -25,3 +26,4 @@ PercussionNumberThreePart = \MakePercussionPart \PercussionNumberThree
 PercussionNumberThreeAPart = \MakePercussionPart \PercussionNumberThreeA
 PercussionNumberThreeBPart = \MakePercussionPart \PercussionNumberThreeB
 PercussionNumberFourPart = \MakePercussionPart \PercussionNumberFour
+PercussionNumberFivePart = \MakePercussionPart \PercussionNumberFive

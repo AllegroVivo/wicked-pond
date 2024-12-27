@@ -8,6 +8,7 @@
 \include "3a-jeweled-shoes.ily"
 \include "3b-let-her-go.ily"
 \include "4-the-wizard-and-i.ily"
+\include "5-what-is-this-feeling.ily"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 MakeHornOnePart = 
@@ -25,3 +26,4 @@ HornOneNumberThreePart = \MakeHornOnePart \HornOneNumberThree
 HornOneNumberThreeAPart = \MakeHornOnePart \HornOneNumberThreeA
 HornOneNumberThreeBPart = \MakeHornOnePart \HornOneNumberThreeB
 HornOneNumberFourPart = \MakeHornOnePart \HornOneNumberFour
+HornOneNumberFivePart = \MakeHornOnePart \HornOneNumberFive

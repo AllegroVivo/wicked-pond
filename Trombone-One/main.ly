@@ -8,6 +8,7 @@
 \include "3a-jeweled-shoes.ily"
 \include "3b-let-her-go.ily"
 \include "4-the-wizard-and-i.ily"
+\include "5-what-is-this-feeling.ily"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 MakeTromboneOnePart = 
@@ -25,3 +26,4 @@ TromboneOneNumberThreePart = \MakeTromboneOnePart \TromboneOneNumberThree
 TromboneOneNumberThreeAPart = \MakeTromboneOnePart \TromboneOneNumberThreeA
 TromboneOneNumberThreeBPart = \MakeTromboneOnePart \TromboneOneNumberThreeB
 TromboneOneNumberFourPart = \MakeTromboneOnePart \TromboneOneNumberFour
+TromboneOneNumberFivePart = \MakeTromboneOnePart \TromboneOneNumberFive

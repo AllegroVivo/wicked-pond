@@ -8,6 +8,7 @@
 \include "3a-jeweled-shoes.ily"
 \include "3b-let-her-go.ily"
 \include "4-the-wizard-and-i.ily"
+\include "5-what-is-this-feeling.ily"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 MakeViolinTwoPart = 
@@ -25,3 +26,4 @@ ViolinTwoNumberThreePart = \MakeViolinTwoPart \ViolinTwoNumberThree
 ViolinTwoNumberThreeAPart = \MakeViolinTwoPart \ViolinTwoNumberThreeA
 ViolinTwoNumberThreeBPart = \MakeViolinTwoPart \ViolinTwoNumberThreeB
 ViolinTwoNumberFourPart = \MakeViolinTwoPart \ViolinTwoNumberFour
+ViolinTwoNumberFivePart = \MakeViolinTwoPart \ViolinTwoNumberFive

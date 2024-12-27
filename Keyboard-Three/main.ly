@@ -8,6 +8,7 @@
 \include "3a-jeweled-shoes.ily"
 \include "3b-let-her-go.ily"
 \include "4-the-wizard-and-i.ily"
+\include "5-what-is-this-feeling.ily"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 MakeKeyboardThreePart = 
@@ -27,3 +28,4 @@ KeyboardThreeNumberThreePart = \MakeKeyboardThreePart \KeyboardThreeNumberThreeR
 KeyboardThreeNumberThreeAPart = \MakeKeyboardThreePart \KeyboardThreeNumberThreeARH \KeyboardThreeNumberThreeALH
 KeyboardThreeNumberThreeBPart = \MakeKeyboardThreePart \KeyboardThreeNumberThreeBRH \KeyboardThreeNumberThreeBLH
 KeyboardThreeNumberFourPart = \MakeKeyboardThreePart \KeyboardThreeNumberFourRH \KeyboardThreeNumberFourLH
+KeyboardThreeNumberFivePart = \MakeKeyboardThreePart \KeyboardThreeNumberFiveRH \KeyboardThreeNumberFiveLH

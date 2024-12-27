@@ -137,6 +137,4 @@ KeyboardTwoNumberOneLH = \relative c' {
 %         \new Staff = "rh" << \KeyboardTwoNumberOneRH >>
 %         \new Staff = "lh" << \KeyboardTwoNumberOneLH >>
 %     >>
-%     \layout {
-%     }
 % }

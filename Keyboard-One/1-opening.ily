@@ -214,6 +214,4 @@ KeyboardOneNumberOneLH = \relative c, {
 %         \new Staff = "rh" << \KeyboardOneNumberOneRH >>
 %         \new Staff = "lh" << \KeyboardOneNumberOneLH >>
 %     >>
-%     \layout {
-%     }
 % }
